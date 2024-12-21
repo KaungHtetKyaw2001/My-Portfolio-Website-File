@@ -1,14 +1,12 @@
 {
-   "name": "My-Portfolio-Website-File",
+  "name": "My-Portfolio-Website-File",
   "version": "1.0.0",
   "main": "index.html",
   "dependencies": {
-    "nodemailer": "^6.9.1"
+    "nodemailer": "^6.9.1",
+    "bootstrap": "^5.3.3"
   },
   "scripts": {
     "start": "node index.js"
-  }
-  "dependencies": {
-    "bootstrap": "^5.3.3"
   }
 }
