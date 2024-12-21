@@ -1339,17 +1339,20 @@ const closeBtn = document.querySelector(".close");
 // Open the modal
 btn.onclick = function (e) {
   e.preventDefault(); // Prevent default anchor behavior
+	$(modal).fadeIn(700); // 700ms for the fade-in duration
   modal.style.display = "block";
 };
 
 // Close the modal when the user clicks on the close button
 closeBtn.onclick = function () {
+	$(modal).fadeOut(700); // 700ms for the fade-out duration
   modal.style.display = "none";
 };
 
 // Close the modal when the user clicks anywhere outside of it
 window.onclick = function (event) {
   if (event.target === modal) {
+	  $(modal).fadeOut(700);
     modal.style.display = "none";
   }
 };
