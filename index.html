@@ -1333,52 +1333,59 @@
   });</script>
 
   <script>
-   // Get the modal and button
-const modal = document.getElementById("contactModal");
-const btn = document.getElementById("contactBtn");
-const closeBtn = document.querySelector(".close");
+  // Get the modal and button
+  const modal = document.getElementById("contactModal");
+  const btn = document.getElementById("contactBtn");
+  const closeBtn = document.querySelector(".close");
 
-// Open the modal
-btn.onclick = function (e) {
-  e.preventDefault(); // Prevent default anchor behavior
-	$(modal).fadeIn(700); // 700ms for the fade-in duration
-  modal.style.display = "block";
-};
+  // Open the modal
+  btn.onclick = function (e) {
+    e.preventDefault(); // Prevent default anchor behavior
+    $(modal).fadeIn(700); // 700ms for the fade-in duration
+    modal.style.display = "block";
+  };
 
-// Close the modal when the user clicks on the close button
-closeBtn.onclick = function () {
-	$(modal).fadeOut(700); // 700ms for the fade-out duration
-  modal.style.display = "none";
-};
-
-// Close the modal when the user clicks anywhere outside of it
-window.onclick = function (event) {
-  if (event.target === modal) {
-	  $(modal).fadeOut(700);
+  // Close the modal when the user clicks on the close button
+  closeBtn.onclick = function () {
+    $(modal).fadeOut(700); // 700ms for the fade-out duration
     modal.style.display = "none";
-  }
-};
+  };
 
-	  // After the form is submitted, show a thank you message
-  $("#contactForm").on("submit", function(event) {
+  // Close the modal when the user clicks anywhere outside of it
+  window.onclick = function (event) {
+    if (event.target === modal) {
+      $(modal).fadeOut(700);
+      modal.style.display = "none";
+    }
+  };
+
+  // After the form is submitted, show a thank you message
+  $("#contactForm").on("submit", function (event) {
     event.preventDefault();
 
-    var formData = $(this).serialize();
+    // Get form data
+    const formData = {
+      name: $("#name").val(),
+      email: $("#email").val(),
+      message: $("#message").val(),
+    };
 
+    // Send AJAX POST request
     $.ajax({
-      url: '/api/send-email',
-      type: 'POST',
-      data: formData,
-      success: function(response) {
-        $(modal).fadeOut(700); 
+      url: "/api/send-email",
+      type: "POST",
+      contentType: "application/json", // Set the content type to JSON
+      data: JSON.stringify(formData), // Convert the form data to JSON
+      success: function (response) {
+        $(modal).fadeOut(700); // Close the modal
         modal.style.display = "none";
-        $(thankYouMessage).fadeIn(700);
+        alert("Thank you for your message!");
       },
-      error: function() {
+      error: function () {
         alert("Error sending message. Please try again.");
-      }
+      },
     });
   });
+</script>
 
-  </script>
   </html>
