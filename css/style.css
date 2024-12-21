@@ -489,6 +489,7 @@
 	line-height: 29px;
 	/* max-width: 680px; */
 	margin-left: 200px;
+	margin-bottom: 300px;
 }
 
  .award_information{
@@ -498,6 +499,7 @@
     align-items: center;
     height: 40vh;
     margin-left:40px;
+	 margin-bottom:100px;
  }
 
  .heading_skills2{
