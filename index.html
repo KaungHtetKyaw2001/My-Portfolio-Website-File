@@ -71,20 +71,87 @@
                       <div id="contactModal" class="modal">
 
                         <!-- Modal content -->
-                        <div class="modal-content">
-                          <span class="close">&times;</span>
-                          <form id="contactForm">
-                            <h3>Please fill this form to contact us from here</h3>
-                            <!-- Your form fields here -->
-                            Your Name <input type="text" placeholder="Your Name" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; border-radius: 15px; height:35px;" required><br><br>
-                            Your Email <input type="email" placeholder="Your Email" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; border-radius: 15px; height:35px;" required><br><br>
-                            Message <textarea placeholder="Your Message" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  border-radius: 15px;" required></textarea><br>
-                            <button type="submit" class="btn_home">Send</button>
-                          </form>
-                        </div>
+                       <li class="nav-item">
+  <a class="btn-navbar" href="#" id="contactBtn">Contact Me</a>
+  <!-- The Modal -->
+  <div id="contactModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content" style="border-radius: 20px; padding: 20px; max-width: 400px; margin: auto;">
+      <span class="close" style="float: right; font-size: 24px; cursor: pointer;">&times;</span>
+      <form id="contactForm" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <h3 style="text-align: center; color: #333; margin-bottom: 20px;">Get in Touch</h3>
+        <!-- Your form fields here -->
+        <div style="margin-bottom: 15px;">
+          <label for="name" style="font-weight: bold;">Your Name</label>
+          <input type="text" id="name" placeholder="Enter your name" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 10px;" required>
+        </div>
+        <div style="margin-bottom: 15px;">
+          <label for="email" style="font-weight: bold;">Your Email</label>
+          <input type="email" id="email" placeholder="Enter your email" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 10px;" required>
+        </div>
+        <div style="margin-bottom: 20px;">
+          <label for="message" style="font-weight: bold;">Message</label>
+          <textarea id="message" placeholder="Write your message here" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 10px; height: 100px;" required></textarea>
+        </div>
+        <button type="submit" style="background-color: #28a745; color: white; padding: 10px 20px; border: none; border-radius: 10px; cursor: pointer; width: 100%; font-size: 16px;">
+          Send
+        </button>
+      </form>
+    </div>
+  </div>
+</li>
 
-</div>
-                      </li>
+			      <style>
+				      .modal-content {
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  background: linear-gradient(to right, #a8e063, #56ab2f); /* Gradient color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.close:hover {
+  color: #ff0000;
+}
+
+			      </style>
 
                       <!-- Now Applying css -->
 
