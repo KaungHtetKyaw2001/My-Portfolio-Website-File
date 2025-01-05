@@ -30,11 +30,13 @@ export default async (req, res) => {
       });
 
       const mailOptions = {
-        from: `"${trimmedName}" <${trimmedEmail}>`, // Ensure sender details are correct
-        to: 'kaunghtetkyaw2001@gmail.com',
-        subject: `Message from ${trimmedName}`,
-        text: trimmedMessage,
-      };
+  from: `"${trimmedName}" <${process.env.EMAIL_USER}>`, // Authenticated Gmail address
+  replyTo: trimmedEmail, // User's email for replies
+  to: 'kaunghtetkyaw2001@gmail.com',
+  subject: `Message from ${trimmedName}`,
+  text: trimmedMessage,
+};
+
 
       // Send the email
       await transporter.sendMail(mailOptions);
