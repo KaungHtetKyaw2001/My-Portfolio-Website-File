@@ -5,15 +5,34 @@ import axios from 'axios';
 const validateEmailWithAPI = async (email) => {
   const apiKey = process.env.ZEROBOUNCE_API_KEY;
   console.log(`Validating email with ZeroBounce API: ${email}`);
+  
   try {
     const response = await axios.get(`https://api.zerobounce.net/v2/validate?api_key=${apiKey}&email=${email}`);
     console.log('ZeroBounce API Response:', response.data);
-    return response.data.status === 'valid';
+
+    // Allow emails from trusted domains like .edu, .org, etc.
+    const trustedDomains = ['edu', 'org', 'gov', 'ac', 'int', 'mil']; // Add more trusted domains here
+
+    const emailDomain = email.split('@')[1];
+    const domainExtension = emailDomain.split('.').pop();  // Get the domain extension like .edu, .org, etc.
+    
+    // If the domain is trusted, consider the email valid even if mailbox is not found
+    if (trustedDomains.includes(domainExtension) || response.data.status === 'valid') {
+      return true; // Mark as valid
+    }
+
+    // Mark as invalid if not valid and not a trusted domain
+    if (response.data.status === 'invalid') {
+      return false; // Invalid email
+    }
+
+    return true; // Valid email in all other cases
   } catch (error) {
     console.error('Error while validating email with ZeroBounce API:', error);
-    return false;
+    return false; // Default to invalid on error
   }
 };
+
 
 // Custom email validation function
 const validateEmail = (email) => {
