@@ -1,6 +1,3 @@
-import nodemailer from 'nodemailer';
-import axios from 'axios';
-
 const validateEmailWithAPI = async (email) => {
   const apiKey = process.env.ZEROBOUNCE_API_KEY;
   if (!apiKey) {
@@ -14,7 +11,14 @@ const validateEmailWithAPI = async (email) => {
     console.log('ZeroBounce API Response:', response.data);
 
     if (response.data && response.data.status) {
-      return response.data.status === 'valid';
+      const { status, sub_status } = response.data;
+      if (status === 'invalid') {
+        if (sub_status === 'mailbox_not_found') {
+          return { isValid: false, message: 'The email address does not exist.' };
+        }
+        return { isValid: false, message: 'Invalid email address.' };
+      }
+      return { isValid: status === 'valid', message: 'Valid email address.' };
     } else {
       throw new Error('Invalid response from ZeroBounce API');
     }
@@ -22,28 +26,6 @@ const validateEmailWithAPI = async (email) => {
     console.error('Error while validating email with ZeroBounce API:', error);
     throw new Error('Failed to validate email address with ZeroBounce');
   }
-};
-
-const validateEmail = (email) => {
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(email)) return 'Invalid email format.';
-
-  const blockedDomains = ['example.com', 'test.com', 'placeholder.com'];
-  const disposableDomains = ['mailinator.com', 'tempmail.com', '10minutemail.com'];
-  const invalidPatterns = [
-    /^([a-z])\1+@/,             // Repeated characters
-    /test/i,                    // Contains "test"
-    /example/i,                 // Contains "example"
-    /abc/i,                     // Contains "abc"
-    /^[0-9]+@[a-z]+\.[a-z]+$/,  // All numeric local part
-  ];
-
-  const domain = email.split('@')[1];
-  if (blockedDomains.includes(domain.toLowerCase())) return 'Invalid domain.';
-  if (disposableDomains.includes(domain.toLowerCase())) return 'Disposable email addresses are not allowed.';
-  if (invalidPatterns.some((pattern) => pattern.test(email))) return 'Email address appears fake.';
-
-  return null; // Valid email
 };
 
 export default async (req, res) => {
@@ -57,9 +39,9 @@ export default async (req, res) => {
       }
 
       // Validate email using the ZeroBounce API
-      const isEmailValid = await validateEmailWithAPI(email);
-      if (!isEmailValid) {
-        return res.status(400).json({ message: 'Invalid or disposable email address detected.' });
+      const { isValid, message: apiMessage } = await validateEmailWithAPI(email);
+      if (!isValid) {
+        return res.status(400).json({ message: apiMessage });
       }
 
       // Validate email using custom rules
