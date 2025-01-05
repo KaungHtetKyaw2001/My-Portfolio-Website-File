@@ -725,13 +725,4 @@ color: white;
 	text-decoration: none;
 	cursor: pointer;
   }
-
-/* Media query for screens smaller than 768px */ @media (max-width: 430px, max-height:940px)
-{
-	.header {
-	width: 100%;
-	height: 800vh;
-	}
-	
-}
   
