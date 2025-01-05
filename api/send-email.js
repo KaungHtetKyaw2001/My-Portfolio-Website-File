@@ -10,7 +10,9 @@ const validateEmailWithAPI = async (email) => {
   try {
     const response = await axios.get(`https://api.zerobounce.net/v2/validate?api_key=${apiKey}&email=${email}`);
     
-    // Check if response data exists and has status
+    // Log the full response for debugging purposes
+    console.log('ZeroBounce API Response:', response.data);
+
     if (response.data && response.data.status) {
       return response.data.status === 'valid';
     } else {
