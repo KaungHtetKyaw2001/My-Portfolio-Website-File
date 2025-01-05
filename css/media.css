@@ -158,7 +158,7 @@
         font-size: 11px;
     }
 }
-/* Media query for screens smaller than 768px */ @media (max-width: 430px, max-height:940px)
+/* Media query for screens smaller than 768px */ @media (max-width: 2532px)
 {
 	.header {
 	width: 100%;
