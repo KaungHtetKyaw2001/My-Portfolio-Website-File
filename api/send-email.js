@@ -1,15 +1,23 @@
 import nodemailer from 'nodemailer';
 import axios from 'axios';
 
-// Email validation function
+// Email validation function using ZeroBounce API
 const validateEmailWithAPI = async (email) => {
   const apiKey = process.env.ZEROBOUNCE_API_KEY;
-  const response = await axios.get(`https://api.zerobounce.net/v2/validate?api_key=${apiKey}&email=${email}`);
-  return response.data.status === 'valid';
+  console.log(`Validating email with ZeroBounce API: ${email}`);
+  try {
+    const response = await axios.get(`https://api.zerobounce.net/v2/validate?api_key=${apiKey}&email=${email}`);
+    console.log('ZeroBounce API Response:', response.data);
+    return response.data.status === 'valid';
+  } catch (error) {
+    console.error('Error while validating email with ZeroBounce API:', error);
+    return false;
+  }
 };
 
-// Custom email validation
+// Custom email validation function
 const validateEmail = (email) => {
+  console.log(`Validating email with custom rules: ${email}`);
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) return 'Invalid email format.';
 
@@ -36,13 +44,16 @@ export default async (req, res) => {
     try {
       const { name, email, message } = req.body;
 
+      console.log(`Received form data: name=${name}, email=${email}, message=${message}`);
+
       // Check if all fields are provided
       if (!name || !email || !message) {
         return res.status(400).json({ message: 'All fields are required.' });
       }
 
       // Validate email using the ZeroBounce API
-      if (!(await validateEmailWithAPI(email))) {
+      const isValidEmail = await validateEmailWithAPI(email);
+      if (!isValidEmail) {
         return res.status(400).json({ message: 'Invalid or disposable email address detected.' });
       }
 
@@ -70,8 +81,11 @@ export default async (req, res) => {
         text: `You have received a message from ${name} (${email}):\n\n${message}`,
       };
 
+      console.log('Sending email with options:', mailOptions);
+
       // Send the email
       await transporter.sendMail(mailOptions);
+      console.log('Email sent successfully!');
       return res.status(200).json({ message: 'Message sent successfully!' });
     } catch (error) {
       console.error('Email sending failed:', error);
