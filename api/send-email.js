@@ -1,5 +1,6 @@
 import nodemailer from 'nodemailer';
 import axios from 'axios'; // Make sure axios is imported here
+import { validateEmail } from './validateEmail'; // adjust the path based on your file structure
 
 const validateEmailWithAPI = async (email) => {
   const apiKey = process.env.ZEROBOUNCE_API_KEY;
