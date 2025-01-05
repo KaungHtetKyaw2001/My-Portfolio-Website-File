@@ -5,10 +5,22 @@ export default async (req, res) => {
     try {
       const { name, email, message } = req.body;
 
+      // Validate input fields
       if (!name || !email || !message) {
         return res.status(400).json({ message: 'All fields are required.' });
       }
 
+      // Trim input values to remove extra spaces
+      const trimmedName = name.trim();
+      const trimmedEmail = email.trim();
+      const trimmedMessage = message.trim();
+
+      // Additional validation: Check if name is a default placeholder value
+      if (trimmedName.toLowerCase() === 'your name') {
+        return res.status(400).json({ message: 'Invalid name provided.' });
+      }
+
+      // Nodemailer configuration
       const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
@@ -18,12 +30,13 @@ export default async (req, res) => {
       });
 
       const mailOptions = {
-        from: email,
+        from: `"${trimmedName}" <${trimmedEmail}>`, // Ensure sender details are correct
         to: 'kaunghtetkyaw2001@gmail.com',
-        subject: `Message from ${name}`,
-        text: message,
+        subject: `Message from ${trimmedName}`,
+        text: trimmedMessage,
       };
 
+      // Send the email
       await transporter.sendMail(mailOptions);
       return res.status(200).json({ message: 'Message sent successfully!' });
     } catch (error) {
