@@ -158,13 +158,13 @@
         font-size: 11px;
     }
 }
-@media (max-width: 1170px) {
+@media (max-width: 2350px) {
     .navbar-brand {
         font-size: 24px;
     }
     
     .home {
-        height: 60vh;
+        height: 1320vh;
     }
 
     .heading_sm {
