@@ -31,7 +31,7 @@ export default async (req, res) => {
 
       const mailOptions = {
   from: `"${trimmedName}" <${process.env.EMAIL_USER}>`, // Authenticated Gmail address
-  replyTo: trimmedEmail, // User's email for replies
+  replyFrom: trimmedEmail, // User's email for replies
   to: 'kaunghtetkyaw2001@gmail.com',
   subject: `Message from ${trimmedName}`,
   text: trimmedMessage,
