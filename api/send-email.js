@@ -1,3 +1,6 @@
+import nodemailer from 'nodemailer';
+import axios from 'axios'; // Make sure axios is imported here
+
 const validateEmailWithAPI = async (email) => {
   const apiKey = process.env.ZEROBOUNCE_API_KEY;
   if (!apiKey) {
