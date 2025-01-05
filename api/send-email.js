@@ -3,8 +3,23 @@ import axios from 'axios';
 
 const validateEmailWithAPI = async (email) => {
   const apiKey = process.env.ZEROBOUNCE_API_KEY;
-  const response = await axios.get(`https://api.zerobounce.net/v2/validate?api_key=${apiKey}&email=${email}`);
-  return response.data.status === 'valid';
+  if (!apiKey) {
+    throw new Error('ZeroBounce API key is missing!');
+  }
+
+  try {
+    const response = await axios.get(`https://api.zerobounce.net/v2/validate?api_key=${apiKey}&email=${email}`);
+    
+    // Check if response data exists and has status
+    if (response.data && response.data.status) {
+      return response.data.status === 'valid';
+    } else {
+      throw new Error('Invalid response from ZeroBounce API');
+    }
+  } catch (error) {
+    console.error('Error while validating email with ZeroBounce API:', error);
+    throw new Error('Failed to validate email address with ZeroBounce');
+  }
 };
 
 const validateEmail = (email) => {
@@ -40,7 +55,8 @@ export default async (req, res) => {
       }
 
       // Validate email using the ZeroBounce API
-      if (!(await validateEmailWithAPI(email))) {
+      const isEmailValid = await validateEmailWithAPI(email);
+      if (!isEmailValid) {
         return res.status(400).json({ message: 'Invalid or disposable email address detected.' });
       }
 
@@ -61,7 +77,7 @@ export default async (req, res) => {
 
       // Email options
       const mailOptions = {
-        from: `"${name}" <kaunghtetkyaw2001@gmail.com>`,
+        from: `"${name}" <${process.env.EMAIL_USER}>`,
         to: 'kaunghtetkyaw2001@gmail.com',
         replyTo: email, // Sender's email
         subject: `Message from ${name}`,
