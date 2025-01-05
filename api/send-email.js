@@ -34,7 +34,8 @@ export default async (req, res) => {
   replyTo: trimmedEmail, // User's email for replies
   to: 'kaunghtetkyaw2001@gmail.com',
   subject: `Message from ${trimmedName}`,
-  text: trimmedMessage,
+  text: `You have received a new message from ${name} (${email}):\n\n${message}`,
+
 };
 
 
