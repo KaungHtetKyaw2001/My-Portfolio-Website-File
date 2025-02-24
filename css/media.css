@@ -64,9 +64,10 @@
 /*    h2.heading_skills{
       margin-top: 300px;
    }
+   */
    p.awards_intro{
-      margin-top:300px;
-   } */
+      margin-right:250px;
+   }
    .award_information{
       margin-top: 300px;
    }
@@ -122,6 +123,9 @@
       width: 100%;
       height: auto;
       margin-top: 2000px;
+   }
+   p.awards_intro{
+      margin-right:250px;
    }
    .award_information{
       margin-top: 300px;
@@ -179,6 +183,9 @@
       height: auto;
       margin-top: 2000px;
    }
+   p.awards_intro{
+      margin-right:250px;
+   }
    .award_information{
       margin-top: 300px;
    }
@@ -234,6 +241,9 @@
       width: 100%;
       height: auto;
       margin-top: 2000px;
+   }
+   p.awards_intro{
+      margin-right:250px;
    }
    .award_information{
       margin-top: 300px;
@@ -291,6 +301,9 @@
       height: auto;
       margin-top: 2000px;
    }
+   p.awards_intro{
+      margin-right:250px;
+   }
    .award_information{
       margin-top: 300px;
    }
@@ -347,6 +360,9 @@
       height: auto;
       margin-top: 2000px;
    }
+   p.awards_intro{
+      margin-right:250px;
+   }
    .award_information{
       margin-top: 300px;
    }
@@ -402,6 +418,9 @@
       width: 100%;
       height: auto;
       margin-top: 2000px;
+   }
+   p.awards_intro{
+      margin-right:250px;
    }
    .award_information{
       margin-top: 300px;
@@ -460,6 +479,9 @@
       height: auto;
       margin-top: 2000px;
    }
+   p.awards_intro{
+      margin-right:250px;
+   }
    .award_information{
       margin-top: 300px;
    }
@@ -515,6 +537,9 @@
       width: 100%;
       height: auto;
       margin-top: 2000px;
+   }
+   p.awards_intro{
+      margin-right:250px;
    }
    .award_information{
       margin-top: 300px;
@@ -572,6 +597,12 @@
       height: auto;
       margin-top: 2000px;
    }
+   p.awards_intro{
+      margin-right:250px;
+   }
+   .award_information{
+      margin-top: 300px;
+   }
 /*    #blogs.blogs{
       width: 100%;
       height: auto;
@@ -624,6 +655,12 @@
       width: 100%;
       height: auto;
       margin-top: 2000px;
+   }
+   p.awards_intro{
+      margin-right:250px;
+   }
+   .award_information{
+      margin-top: 300px;
    }
 /*    #blogs.blogs{
      width: 100%;
@@ -678,6 +715,12 @@
       height: auto;
       margin-top: 2000px;
    }
+   p.awards_intro{
+      margin-right:250px;
+   }
+   .award_information{
+      margin-top: 300px;
+   }
 /*    #blogs.blogs{
       width: 100%;
       height: auto;
@@ -730,6 +773,9 @@
       width: 100%;
       height: auto;
       margin-top: 2000px;
+   }
+   p.awards_intro{
+      margin-right:250px;
    }
    .award_information{
       margin-top: 300px;
@@ -787,6 +833,9 @@
       height: auto;
       margin-top: 2000px;
    }
+   p.awards_intro{
+      margin-right:250px;
+   }
    .award_information{
       margin-top: 300px;
    }
@@ -843,6 +892,9 @@
       height: auto;
       margin-top: 2000px;
    }
+   p.awards_intro{
+      margin-right:250px;
+   }
    .award_information{
       margin-top: 300px;
    }
@@ -898,6 +950,9 @@
       width: 100%;
       height: auto;
       margin-top: 2000px;
+   }
+   p.awards_intro{
+      margin-right:250px;
    }
    .award_information{
       margin-top: 300px;
@@ -964,6 +1019,9 @@
       margin-top: 2000px;
    }
 
+   p.awards_intro{
+      margin-right:250px;
+   }
    .award_information{
       margin-top: 300px;
    }
