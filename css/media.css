@@ -35,27 +35,27 @@
    .header{
      width: 100%;
       height: auto;
-      margin-top: 100px;
+      margin-top: 400px;
    }
    .about{
       width: 100%;
       height: auto;
-      margin-top: 100px;
+      margin-top: 400px;
    }
    .service{
       width: 100%;
       height: auto;
-      margin-top: 100px;
+      margin-top: 400px;
    }
    .certification{
       width: 100%;
       height: auto;
-      margin-top: 100px;
+      margin-top: 400px;
    }
    .project{
       width: 100%;
       height: auto;
-      margin-top: 100px;
+      margin-top: 400px;
    }
    .blogs{
       width: 100%;
@@ -114,7 +114,7 @@
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 1000px;
+      margin-top: 1400px;
    }
 /*    #blogs.blogs{
        width: 100%;
@@ -134,19 +134,19 @@
       height: auto;
       margin-top:2000px;
    }
-  .detail_container{width: 100%;}
+   .detail_container{width: 100%;}
    .clients{
       width: 100%;
    }
    h5.heading_details{width: 100%;}
    p.para_details{width: 100%;}
-       .header{
+      .header{
       width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .about{
-       width: 100%;
+      width: 100%;
       height: auto;
       margin-top: 100px;
    }
@@ -156,7 +156,7 @@
       margin-top: 100px;
    }
    .certification{
-       width: 100%;
+     width: 100%;
       height: auto;
       margin-top: 100px;
    }
@@ -168,10 +168,10 @@
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 100px;
+      margin-top: 1400px;
    }
 /*    #blogs.blogs{
-      width: 100%;
+       width: 100%;
       height: auto;
       margin-top: 100px;
    } */
@@ -200,7 +200,7 @@
       margin-top: 100px;
    }
    .about{
-     width: 100%;
+      width: 100%;
       height: auto;
       margin-top: 100px;
    }
@@ -215,14 +215,14 @@
       margin-top: 100px;
    }
    .project{
-     width: 100%;
+       width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 1000px;
+      margin-top: 1400px;
    }
 /*    #blogs.blogs{
      width: 100%;
@@ -248,7 +248,7 @@
    }
    h5.heading_details{width: 100%;}
    p.para_details{width: 100%;}
-       .header{
+      .header{
       width: 100%;
       height: auto;
       margin-top: 100px;
@@ -259,24 +259,24 @@
       margin-top: 100px;
    }
    .service{
-     width: 100%;
+      width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .certification{
-      width: 100%;
+     width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .project{
-      width: 100%;
+       width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 1000px;
+      margin-top: 1400px;
    }
 /*    #blogs.blogs{
      width: 100%;
@@ -302,7 +302,7 @@
    }
    h5.heading_details{width: 100%;}
    p.para_details{width: 100%;}
-       .header{
+      .header{
       width: 100%;
       height: auto;
       margin-top: 100px;
@@ -313,7 +313,7 @@
       margin-top: 100px;
    }
    .service{
-     width: 100%;
+      width: 100%;
       height: auto;
       margin-top: 100px;
    }
@@ -323,14 +323,14 @@
       margin-top: 100px;
    }
    .project{
-     width: 100%;
+       width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 1000px;
+      margin-top: 1400px;
    }
 /*    #blogs.blogs{
       width: 100%;
@@ -356,35 +356,36 @@
    }
    h5.heading_details{width: 100%;}
    p.para_details{width: 100%;}
-       .header{
-     width: 100%;
+      .header{
+      width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .about{
-     width: 100%;
+      width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .service{
-     width: 100%;
+      width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .certification{
-      width: 100%;
+     width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .project{
-      width: 100%;
+       width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .blogs{
-     width: 100%;
+      width: 100%;
       height: auto;
-      margin-top: 1000px;
+      margin-top: 1400px;
+   }
 /*    }
    #blogs.blogs{
       width: 100%;
@@ -404,19 +405,19 @@
       height: auto;
       margin-top:2000px;
    }
-  .detail_container{width: 100%;}
+   .detail_container{width: 100%;}
    .clients{
       width: 100%;
    }
    h5.heading_details{width: 100%;}
    p.para_details{width: 100%;}
       .header{
-     width: 100%;
+      width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .about{
-     width: 100%;
+      width: 100%;
       height: auto;
       margin-top: 100px;
    }
@@ -426,19 +427,19 @@
       margin-top: 100px;
    }
    .certification{
-      width: 100%;
+     width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .project{
-      width: 100%;
+       width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .blogs{
-     width: 100%;
+      width: 100%;
       height: auto;
-      margin-top: 1000px;
+      margin-top: 1400px;
    }
 /*    #blogs.blogs{
      width: 100%;
@@ -480,19 +481,19 @@
       margin-top: 100px;
    }
    .certification{
-      width: 100%;
+     width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .project{
-     width: 100%;
+       width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 1000px;
+      margin-top: 1400px;
    }
 /*    #blogs.blogs{
       width: 100%;
@@ -508,7 +509,7 @@
       height: auto;
    }
    footer{
-     width: 100%;
+      width: 100%;
       height: auto;
       margin-top:2000px;
    }
@@ -518,7 +519,7 @@
    }
    h5.heading_details{width: 100%;}
    p.para_details{width: 100%;}
-       .header{
+      .header{
       width: 100%;
       height: auto;
       margin-top: 100px;
@@ -534,19 +535,19 @@
       margin-top: 100px;
    }
    .certification{
-    width: 100%;
+     width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .project{
-     width: 100%;
+       width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 1000px;
+      margin-top: 1400px;
    }
 /*    #blogs.blogs{
       width: 100%;
@@ -572,7 +573,7 @@
    }
    h5.heading_details{width: 100%;}
    p.para_details{width: 100%;}
-       .header{
+      .header{
       width: 100%;
       height: auto;
       margin-top: 100px;
@@ -588,19 +589,19 @@
       margin-top: 100px;
    }
    .certification{
-      width: 100%;
+     width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .project{
-      width: 100%;
+       width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 1000px;
+      margin-top: 1400px;
    }
 /*    #blogs.blogs{
      width: 100%;
@@ -626,13 +627,13 @@
    }
    h5.heading_details{width: 100%;}
    p.para_details{width: 100%;}
-       .header{
+      .header{
       width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .about{
-     width: 100%;
+      width: 100%;
       height: auto;
       margin-top: 100px;
    }
@@ -642,19 +643,19 @@
       margin-top: 100px;
    }
    .certification{
-      width: 100%;
+     width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .project{
-      width: 100%;
+       width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 1000px;
+      margin-top: 1400px;
    }
 /*    #blogs.blogs{
       width: 100%;
@@ -680,7 +681,7 @@
    }
    h5.heading_details{width: 100%;}
    p.para_details{width: 100%;}
-       .header{
+      .header{
       width: 100%;
       height: auto;
       margin-top: 100px;
@@ -696,19 +697,19 @@
       margin-top: 100px;
    }
    .certification{
-      width: 100%;
+     width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .project{
-      width: 100%;
+       width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 1000px;
+      margin-top: 1400px;
    }
 /*    #blogs.blogs{
      width: 100%;
@@ -734,8 +735,8 @@
    }
    h5.heading_details{width: 100%;}
    p.para_details{width: 100%;}
-       .header{
-     width: 100%;
+      .header{
+      width: 100%;
       height: auto;
       margin-top: 100px;
    }
@@ -745,24 +746,24 @@
       margin-top: 100px;
    }
    .service{
-     width: 100%;
+      width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .certification{
-      width: 100%;
+     width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .project{
-      width: 100%;
+       width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 1000px;
+      margin-top: 1400px;
    }
 /*    #blogs.blogs{
      width: 100%;
@@ -788,7 +789,7 @@
    }
    h5.heading_details{width: 100%;}
    p.para_details{width: 100%;}
-       .header{
+      .header{
       width: 100%;
       height: auto;
       margin-top: 100px;
@@ -804,19 +805,19 @@
       margin-top: 100px;
    }
    .certification{
-      width: 100%;
+     width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .project{
-      width: 100%;
+       width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .blogs{
-     width: 100%;
+      width: 100%;
       height: auto;
-      margin-top: 1000px;
+      margin-top: 1400px;
    }
 /*    #blogs.blogs{
       width: 100%;
@@ -827,7 +828,7 @@
 /* Nest Hub Max Size */
 @media(max-width:1280px) and (max-height:800px){
 
-    body{
+   body{
       width: 100%;
       height: auto;
    }
@@ -842,7 +843,7 @@
    }
    h5.heading_details{width: 100%;}
    p.para_details{width: 100%;}
-       .header{
+      .header{
       width: 100%;
       height: auto;
       margin-top: 100px;
@@ -858,19 +859,19 @@
       margin-top: 100px;
    }
    .certification{
-      width: 100%;
+     width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .project{
-     width: 100%;
+       width: 100%;
       height: auto;
       margin-top: 100px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 1000px;
+      margin-top: 1400px;
    }
 /*    #blogs.blogs{
       width: 100%;
@@ -904,35 +905,35 @@
    }
    h5.heading_details{width: 100%;}
    p.para_details{width: 100%;}
-    .header{
-      width: 1024px;
-      height: 1366px;
+      .header{
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .about{
-      width: 1024px;
-      height: 1366px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .service{
-      width: 1024px;
-      height: 1366px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .certification{
-      width: 1024px;
-      height: 1366px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .project{
-      width: 1024px;
-      height: 1366px;
+       width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .blogs{
-     width: 1024px;
-      height: 1366px;
-      margin-top: 1000px;
+      width: 100%;
+      height: auto;
+      margin-top: 1400px;
    }
    
    .img_about {
