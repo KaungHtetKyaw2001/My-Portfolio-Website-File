@@ -1,19 +1,91 @@
 /* Global Media Queries */
 @media(max-width:1360px) {
-    *{
-        width: 100%;
+    h5.heading_sm{margin-top:300px;}
+   h2.heading_lg{margin-top:300px;}
+   #home.home{
+      margin-top: 500px;
+   }
+   .social_links{width:13%; display: flex;
+/*             justify-content: center; */
+/*             align-items: center; */
+                }
+   .detail_container{width: 100%;margin-top:600px;}
+   body{
+      width: 100%;
       height: auto;
-    }
-    .img_about {
-        width: 480px;
-    }
-    .blogs {
-        width: 90%;
-    }
-    .heading_lg {
-        font-size: 70px;
-    }
-}
+   }
+   footer{
+      width: 100%;
+      height: auto;
+      margin-top:2000px;
+   }
+   
+   .clients{
+      width: 100%;
+   }
+   h5.heading_details{width: 100%;}
+   p.para_details{width: 100%;}
+   .header{
+     width: 100%;
+      height: auto;
+   }
+   .about{
+      width: 100%;
+      height: auto;
+      margin-top: 400px;
+   }
+   .service{
+      width: 100%;
+      height: auto;
+      margin-top: 400px;
+   }
+   .certification{
+      width: 100%;
+      height: auto;
+      margin-top: 700px;
+   }
+   .project{
+      width: 100%;
+      height: auto;
+      margin-top: 500px;
+   }
+   .blogs{
+      width: 100%;
+      height: auto;
+      margin-top: 2000px;
+   }
+/*    h2.heading_skills{
+      margin-top: 300px;
+   }
+   */
+   p.awards_intro{
+      margin-right:250px;
+   }
+   .award_information{
+      margin-top: 300px;
+   }
+   h3.heading_skills2{
+      margin-top: 800px;
+   }
+/*    p.certificate_intro{
+      margin-top: 300px;
+   } */
+   .certification_information{
+      margin-top: 300px;
+   }
+
+   h2.heading_project{
+      margin-top: 800px;
+   }
+   .projects_information{
+      margin-top:1000px;
+   }
+   h2.heading{
+    margin-top:1800px;  
+   }
+   .blogs_container{
+      margin-top:1500px;
+   }
 
 /* iPhone SE Size */
 @media(max-width:375px) and (max-height:667px){
@@ -1429,8 +1501,91 @@
 
 @media(max-width:768px)
 {
-   .header,.about,.service,.certification,.project,.blogs{
-      width: 768px;
+   h5.heading_sm{margin-top:300px;}
+   h2.heading_lg{margin-top:300px;}
+   #home.home{
+      margin-top: 500px;
+   }
+   .social_links{width:13%; display: flex;
+/*             justify-content: center; */
+/*             align-items: center; */
+                }
+   .detail_container{width: 100%;margin-top:600px;}
+   body{
+      width: 100%;
+      height: auto;
+   }
+   footer{
+      width: 100%;
+      height: auto;
+      margin-top:2000px;
+   }
+   
+   .clients{
+      width: 100%;
+   }
+   h5.heading_details{width: 100%;}
+   p.para_details{width: 100%;}
+   .header{
+     width: 100%;
+      height: auto;
+   }
+   .about{
+      width: 100%;
+      height: auto;
+      margin-top: 400px;
+   }
+   .service{
+      width: 100%;
+      height: auto;
+      margin-top: 400px;
+   }
+   .certification{
+      width: 100%;
+      height: auto;
+      margin-top: 700px;
+   }
+   .project{
+      width: 100%;
+      height: auto;
+      margin-top: 500px;
+   }
+   .blogs{
+      width: 100%;
+      height: auto;
+      margin-top: 2000px;
+   }
+/*    h2.heading_skills{
+      margin-top: 300px;
+   }
+   */
+   p.awards_intro{
+      margin-right:250px;
+   }
+   .award_information{
+      margin-top: 300px;
+   }
+   h3.heading_skills2{
+      margin-top: 800px;
+   }
+/*    p.certificate_intro{
+      margin-top: 300px;
+   } */
+   .certification_information{
+      margin-top: 300px;
+   }
+
+   h2.heading_project{
+      margin-top: 800px;
+   }
+   .projects_information{
+      margin-top:1000px;
+   }
+   h2.heading{
+    margin-top:1800px;  
+   }
+   .blogs_container{
+      margin-top:1500px;
    }
 }
 
@@ -1570,44 +1725,92 @@
 }
 
 @media(max-width: 992px) {
-    .navbar-toggler {
-        background-color: white !important;
-        border: none;
-    }
-    .img_home {
-        display: none;
-    }
-    .heading_lg {
-        font-size: 94px;
-    }
-    .heading_lg, .heading_sm, .heading_md, .social_links, .links_home {
-        text-align: center;
-    }
-    .navbar-nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .navbar-nav .nav-item {
-        margin: 6px 0;
-    }
-    .detail_container {
-        width: 560px;
-        height: 90px;
-        bottom: -24px;
-    }
-    .row_second {
-        display: none;
-    }
-    .service {
-        width: 100%;
-        height: auto;
-    }
-    .blogs {
-        width: 80%;
-        margin: auto;
-    }
-}
+    h5.heading_sm{margin-top:300px;}
+   h2.heading_lg{margin-top:300px;}
+   #home.home{
+      margin-top: 500px;
+   }
+   .social_links{width:13%; display: flex;
+/*             justify-content: center; */
+/*             align-items: center; */
+                }
+   .detail_container{width: 100%;margin-top:600px;}
+   body{
+      width: 100%;
+      height: auto;
+   }
+   footer{
+      width: 100%;
+      height: auto;
+      margin-top:2000px;
+   }
+   
+   .clients{
+      width: 100%;
+   }
+   h5.heading_details{width: 100%;}
+   p.para_details{width: 100%;}
+   .header{
+     width: 100%;
+      height: auto;
+   }
+   .about{
+      width: 100%;
+      height: auto;
+      margin-top: 400px;
+   }
+   .service{
+      width: 100%;
+      height: auto;
+      margin-top: 400px;
+   }
+   .certification{
+      width: 100%;
+      height: auto;
+      margin-top: 700px;
+   }
+   .project{
+      width: 100%;
+      height: auto;
+      margin-top: 500px;
+   }
+   .blogs{
+      width: 100%;
+      height: auto;
+      margin-top: 2000px;
+   }
+/*    h2.heading_skills{
+      margin-top: 300px;
+   }
+   */
+   p.awards_intro{
+      margin-right:250px;
+   }
+   .award_information{
+      margin-top: 300px;
+   }
+   h3.heading_skills2{
+      margin-top: 800px;
+   }
+/*    p.certificate_intro{
+      margin-top: 300px;
+   } */
+   .certification_information{
+      margin-top: 300px;
+   }
+
+   h2.heading_project{
+      margin-top: 800px;
+   }
+   .projects_information{
+      margin-top:1000px;
+   }
+   h2.heading{
+    margin-top:1800px;  
+   }
+   .blogs_container{
+      margin-top:1500px;
+   }
 
 @media(max-width: 768px) {
     .heading-lg {
@@ -1651,17 +1854,92 @@
 }
 
 @media(max-width: 576px) {
-    .detail_container {
-        width: 380px;
-        height: 90px;
-        bottom: -24px;
-    }
-    .heading_details {
-        font-size: 16px;
-    }
-    .para_details {
-        font-size: 11px;
-    }
+    h5.heading_sm{margin-top:300px;}
+   h2.heading_lg{margin-top:300px;}
+   #home.home{
+      margin-top: 500px;
+   }
+   .social_links{width:13%; display: flex;
+/*             justify-content: center; */
+/*             align-items: center; */
+                }
+   .detail_container{width: 100%;margin-top:600px;}
+   body{
+      width: 100%;
+      height: auto;
+   }
+   footer{
+      width: 100%;
+      height: auto;
+      margin-top:2000px;
+   }
+   
+   .clients{
+      width: 100%;
+   }
+   h5.heading_details{width: 100%;}
+   p.para_details{width: 100%;}
+   .header{
+     width: 100%;
+      height: auto;
+   }
+   .about{
+      width: 100%;
+      height: auto;
+      margin-top: 400px;
+   }
+   .service{
+      width: 100%;
+      height: auto;
+      margin-top: 400px;
+   }
+   .certification{
+      width: 100%;
+      height: auto;
+      margin-top: 700px;
+   }
+   .project{
+      width: 100%;
+      height: auto;
+      margin-top: 500px;
+   }
+   .blogs{
+      width: 100%;
+      height: auto;
+      margin-top: 2000px;
+   }
+/*    h2.heading_skills{
+      margin-top: 300px;
+   }
+   */
+   p.awards_intro{
+      margin-right:250px;
+   }
+   .award_information{
+      margin-top: 300px;
+   }
+   h3.heading_skills2{
+      margin-top: 800px;
+   }
+/*    p.certificate_intro{
+      margin-top: 300px;
+   } */
+   .certification_information{
+      margin-top: 300px;
+   }
+
+   h2.heading_project{
+      margin-top: 800px;
+   }
+   .projects_information{
+      margin-top:1000px;
+   }
+   h2.heading{
+    margin-top:1800px;  
+   }
+   .blogs_container{
+      margin-top:1500px;
+   }
 }
 
 
