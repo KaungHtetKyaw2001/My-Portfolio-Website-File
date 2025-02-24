@@ -21,6 +21,11 @@
       height: 667px;
       margin-top: 100px;
    }
+   #blogs.blogs{
+      width: 375px;
+      height: 667px;
+      margin-top: 100px;
+   }
 }
 /* iPhone XR Size  */
 @media(max-width:414px) and (max-height:896px){
@@ -28,6 +33,11 @@
       width: 414px;
       height: 896px;
          margin-top: 100px;
+   }
+   #blogs.blogs{
+      width: 414px;
+      height: 896px;
+      margin-top: 100px;
    }
 }
 /* iPhone 12 Pro Size */
@@ -37,6 +47,11 @@
       height: 844px;
          margin-top: 100px;
    }
+   #blogs.blogs{
+      width: 390px;
+      height: 844px;
+      margin-top: 100px;
+   }
 }
 /* iPhone 14 Pro Size */
 @media(max-width:430px) and (max-height:932px){
@@ -44,6 +59,11 @@
       width: 430px;
       height: 932px;
          margin-top: 100px;
+   }
+   #blogs.blogs{
+      width: 430px;
+      height: 932px;
+      margin-top: 100px;
    }
 }
 /* Pixel 7 Size */
@@ -53,6 +73,11 @@
       height: 915px;
          margin-top: 100px;
    }
+   #blogs.blogs{
+      width: 412px;
+      height: 915px;
+      margin-top: 100px;
+   }
 }
 /* Samsung Galaxy S8 Size */
 @media(max-width:360px) and (max-height:740px){
@@ -60,6 +85,11 @@
       width: 360px;
       height: 740px;
          margin-top: 100px;
+   }
+   #blogs.blogs{
+      width: 360px;
+      height: 740px;
+      margin-top: 100px;
    }
 }
 /* Samsung Galaxy S20 Ultra Size */
@@ -69,6 +99,11 @@
       height: 915px;
          margin-top: 100px;
    }
+   #blogs.blogs{
+      width: 412px;
+      height: 915px;
+      margin-top: 100px;
+   }
 }
 /* iPad Mini Size */
 @media(max-width:768px) and (max-height:1024px){
@@ -76,6 +111,11 @@
       width: 768px;
       height: 1024px;
          margin-top: 100px;
+   }
+   #blogs.blogs{
+      width: 768px;
+      height: 1024px;
+      margin-top: 100px;
    }
 }
 /* iPad Air Size */
@@ -85,6 +125,11 @@
       height: 1180px;
          margin-top: 100px;
    }
+   #blogs.blogs{
+      width: 820px;
+      height: 1180px;
+      margin-top: 100px;
+   }
 }
 /* Surface Pro 7  Size */
 @media(max-width:912px) and (max-height:1368px){
@@ -92,6 +137,11 @@
       width: 912px;
       height: 1368px;
          margin-top: 100px;
+   }
+   #blogs.blogs{
+      width: 912px;
+      height: 1368px;
+      margin-top: 100px;
    }
 }
 /* Surface Duo Size */
@@ -101,6 +151,11 @@
       height: 720px;
          margin-top: 100px;
    }
+   #blogs.blogs{
+      width: 540px;
+      height: 720px;
+      margin-top: 100px;
+   }
 }
 /* Galaxy Z Fold 5 Size */
 @media(max-width:344px) and (max-height:882px){
@@ -108,6 +163,11 @@
       width: 344px;
       height: 882px;
          margin-top: 100px;
+   }
+   #blogs.blogs{
+      width: 344px;
+      height: 882px;
+      margin-top: 100px;
    }
 }
 /* Asus Zen book Size */
@@ -117,6 +177,11 @@
       height: 1280px;
          margin-top: 100px;
    }
+   #blogs.blogs{
+      width: 853px;
+      height: 1280px;
+      margin-top: 100px;
+   }
 }
 /* Samsung Galaxy A51/71 Size */
 @media(max-width:412px) and (max-height:914px){
@@ -124,6 +189,11 @@
       width: 412px;
       height: 914px;
          margin-top: 100px;
+   }
+   #blogs.blogs{
+      width: 412px;
+      height: 914px;
+      margin-top: 100px;
    }
 }
 /* Nest Hub Size */
@@ -133,6 +203,11 @@
       height: 600px;
          margin-top: 100px;
    }
+   #blogs.blogs{
+      width: 1024px;
+      height: 600px;
+      margin-top: 100px;
+   }
 }
 /* Nest Hub Max Size */
 @media(max-width:1280px) and (max-height:800px){
@@ -140,6 +215,11 @@
       width: 1280px;
       height: 800px;
          margin-top: 100px;
+   }
+   #blogs.blogs{
+      width: 1280px;
+      height: 800px;
+      margin-top: 100px;
    }
 }
 
