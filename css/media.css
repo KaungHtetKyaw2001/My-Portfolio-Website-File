@@ -7,20 +7,36 @@
         width: 480px;
     }
     .blogs {
-        width: 65%;
+        width: 90%;
     }
     .heading_lg {
         font-size: 70px;
     }
 }
 
+/* iPhone 14 Pro Max Size */
+
+@media(max-width:768px)
+{
+   *{
+      width:768px;
+   }
+}
+
+/* iPad Size */
 @media(max-width:1024px) {
-    .img_about {
+   .header,.about,.service,.certification,.project,.blogs{
+      width: 1024px;
+   }
+   
+   .img_about {
         width: 250px;
     }
-    .blogs {
-        width: 90%;
-    }
+    
+/*    .img-blogs{
+      width:320px;
+      height:420px;
+   } */
     .heading_lg {
         font-size: 70px;
     }
