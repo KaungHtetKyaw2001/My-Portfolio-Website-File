@@ -1,5 +1,8 @@
 /* Global Media Queries */
 @media(max-width:1360px) {
+    *{
+        width:1360px;
+    }
     .img_about {
         width: 480px;
     }
