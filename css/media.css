@@ -1,7 +1,8 @@
 /* Global Media Queries */
 @media(max-width:1360px) {
     *{
-        width:1360px;
+        width: 100%;
+      height: auto;
     }
     .img_about {
         width: 480px;
@@ -21,7 +22,7 @@
       height: auto;
    }
    footer{
-      width: 100%px;
+      width: 100%;
       height: auto;
       margin-top:2000px;
    }
@@ -32,38 +33,38 @@
    h5.heading_details{width: 380px;}
    p.para_details{width: 380px;}
    .header{
-      width: 375px;
-      height: 667px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .about{
-      width: 375px;
-      height: 667px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .service{
-      width: 375px;
-      height: 667px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .certification{
-      width: 375px;
-      height: 667px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .project{
-      width: 375px;
-      height: 667px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .blogs{
-      width: 375px;
-      height: 667px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    #blogs.blogs{
-      width: 375px;
-      height: 667px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
 }
@@ -75,7 +76,7 @@
       height: auto;
    }
    footer{
-      width: 100%px;
+      width: 100%;
       height: auto;
       margin-top:2000px;
    }
@@ -86,38 +87,38 @@
    h5.heading_details{width: 380px;}
    p.para_details{width: 380px;}
       .header{
-      width: 414px;
-      height: 896px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .about{
-       width: 414px;
-      height: 896px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .service{
-       width: 414px;
-      height: 896px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .certification{
-      width: 414px;
-      height: 896px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .project{
-       width: 414px;
-      height: 896px;
+       width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .blogs{
-       width: 414px;
-      height: 896px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    #blogs.blogs{
-       width: 414px;
-      height: 896px;
+       width: 100%;
+      height: auto;
       margin-top: 100px;
    }
 }
@@ -129,7 +130,7 @@
       height: auto;
    }
    footer{
-      width: 100%px;
+      width: 100%;
       height: auto;
       margin-top:2000px;
    }
@@ -140,38 +141,38 @@
    h5.heading_details{width: 380px;}
    p.para_details{width: 380px;}
        .header{
-      width: 390px;
-      height: 844px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .about{
-       width: 390px;
-      height: 844px;
+       width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .service{
-       width: 390px;
-      height: 844px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .certification{
-       width: 390px;
-      height: 844px;
+       width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .project{
-       width: 390px;
-      height: 844px;
+       width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .blogs{
-       width: 390px;
-      height: 844px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    #blogs.blogs{
-       width: 390px;
-      height: 844px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
 }
@@ -183,7 +184,7 @@
       height: auto;
    }
    footer{
-      width: 100%px;
+      width: 100%;
       height: auto;
       margin-top:2000px;
    }
@@ -194,38 +195,38 @@
    h5.heading_details{width: 380px;}
    p.para_details{width: 380px;}
       .header{
-      width: 430px;
-      height: 932px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .about{
-      width: 430px;
-      height: 932px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .service{
-      width: 430px;
-      height: 932px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .certification{
-     width: 430px;
-      height: 932px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .project{
-      width: 430px;
-      height: 932px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .blogs{
-      width: 430px;
-      height: 932px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    #blogs.blogs{
-      width: 430px;
-      height: 932px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
 }
@@ -237,7 +238,7 @@
       height: auto;
    }
    footer{
-      width: 100%px;
+      width: 100%;
       height: auto;
       margin-top:2000px;
    }
@@ -248,38 +249,38 @@
    h5.heading_details{width: 380px;}
    p.para_details{width: 380px;}
        .header{
-      width: 412px;
-      height: 915px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .about{
-      width: 412px;
-      height: 915px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .service{
-      width: 412px;
-      height: 915px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .certification{
-      width: 412px;
-      height: 915px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .project{
-      width: 412px;
-      height: 915px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .blogs{
-      width: 412px;
-      height: 915px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    #blogs.blogs{
-      width: 412px;
-      height: 915px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
 }
@@ -291,7 +292,7 @@
       height: auto;
    }
    footer{
-      width: 100%px;
+      width: 100%;
       height: auto;
       margin-top:2000px;
    }
@@ -302,38 +303,38 @@
    h5.heading_details{width: 380px;}
    p.para_details{width: 380px;}
        .header{
-      width: 360px;
-      height: 740px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .about{
-      width: 360px;
-      height: 740px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .service{
-      width: 360px;
-      height: 740px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .certification{
-      width: 360px;
-      height: 740px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .project{
-     width: 360px;
-      height: 740px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .blogs{
-      width: 360px;
-      height: 740px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    #blogs.blogs{
-      width: 360px;
-      height: 740px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
 }
@@ -345,7 +346,7 @@
       height: auto;
    }
    footer{
-      width: 100%px;
+      width: 100%;
       height: auto;
       margin-top:2000px;
    }
@@ -356,38 +357,38 @@
    h5.heading_details{width: 380px;}
    p.para_details{width: 380px;}
        .header{
-      width: 412px;
-      height: 915px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .about{
-      width: 412px;
-      height: 915px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .service{
-      width: 412px;
-      height: 915px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .certification{
-      width: 412px;
-      height: 915px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .project{
-      width: 412px;
-      height: 915px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .blogs{
-      width: 412px;
-      height: 915px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    #blogs.blogs{
-      width: 412px;
-      height: 915px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
 }
@@ -399,7 +400,7 @@
       height: auto;
    }
    footer{
-      width: 100%px;
+      width: 100%;
       height: auto;
       margin-top:2000px;
    }
@@ -410,38 +411,38 @@
    h5.heading_details{width: 380px;}
    p.para_details{width: 380px;}
       .header{
-      width: 768px;
-      height: 1024px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .about{
-      width: 768px;
-      height: 1024px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .service{
-      width: 768px;
-      height: 1024px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .certification{
-      width: 768px;
-      height: 1024px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .project{
-      width: 768px;
-      height: 1024px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .blogs{
-      width: 768px;
-      height: 1024px;
+     width: 100%;
+      height: auto;
       margin-top: 500px;
    }
    #blogs.blogs{
-      width: 768px;
-      height: 1024px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
 }
@@ -453,7 +454,7 @@
       height: auto;
    }
    footer{
-      width: 100%px;
+      width: 100%;
       height: auto;
       margin-top:2000px;
    }
@@ -464,38 +465,38 @@
    h5.heading_details{width: 380px;}
    p.para_details{width: 380px;}
       .header{
-      width: 820px;
-      height: 1180px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .about{
-      width: 820px;
-      height: 1180px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .service{
-      width: 820px;
-      height: 1180px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .certification{
-      width: 820px;
-      height: 1180px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .project{
-      width: 820px;
-      height: 1180px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .blogs{
-      width: 820px;
-      height: 1180px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    #blogs.blogs{
-      width: 820px;
-      height: 1180px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
 }
@@ -507,7 +508,7 @@
       height: auto;
    }
    footer{
-      width: 100%px;
+     width: 100%;
       height: auto;
       margin-top:2000px;
    }
@@ -518,38 +519,38 @@
    h5.heading_details{width: 380px;}
    p.para_details{width: 380px;}
        .header{
-      width: 912px;
-      height: 1368px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .about{
-      width: 912px;
-      height: 1368px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .service{
-      width: 912px;
-      height: 1368px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .certification{
-     width: 912px;
-      height: 1368px;
+    width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .project{
-     width: 912px;
-      height: 1368px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .blogs{
-      width: 912px;
-      height: 1368px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    #blogs.blogs{
-      width: 912px;
-      height: 1368px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
 }
@@ -561,7 +562,7 @@
       height: auto;
    }
    footer{
-      width: 100%px;
+      width: 100%;
       height: auto;
       margin-top:2000px;
    }
@@ -572,38 +573,38 @@
    h5.heading_details{width: 380px;}
    p.para_details{width: 380px;}
        .header{
-      width: 540px;
-      height: 720px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .about{
-      width: 540px;
-      height: 720px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .service{
-      width: 540px;
-      height: 720px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .certification{
-      width: 540px;
-      height: 720px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .project{
-      width: 540px;
-      height: 720px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .blogs{
-      width: 540px;
-      height: 720px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    #blogs.blogs{
-      width: 540px;
-      height: 720px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
 }
@@ -615,7 +616,7 @@
       height: auto;
    }
    footer{
-      width: 100%px;
+      width: 100%;
       height: auto;
       margin-top:2000px;
    }
@@ -626,38 +627,38 @@
    h5.heading_details{width: 380px;}
    p.para_details{width: 380px;}
        .header{
-      width: 344px;
-      height: 882px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .about{
-      width: 344px;
-      height: 882px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .service{
-      width: 344px;
-      height: 882px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .certification{
-      width: 344px;
-      height: 882px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .project{
-      width: 344px;
-      height: 882px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .blogs{
-      width: 344px;
-      height: 882px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    #blogs.blogs{
-      width: 344px;
-      height: 882px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
 }
@@ -669,7 +670,7 @@
       height: auto;
    }
    footer{
-      width: 100%px;
+      width: 100%;
       height: auto;
       margin-top:2000px;
    }
@@ -680,38 +681,38 @@
    h5.heading_details{width: 380px;}
    p.para_details{width: 380px;}
        .header{
-      width: 853px;
-      height: 1280px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .about{
-      width: 853px;
-      height: 1280px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .service{
-      width: 853px;
-      height: 1280px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .certification{
-      width: 853px;
-      height: 1280px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .project{
-      width: 853px;
-      height: 1280px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .blogs{
-      width: 853px;
-      height: 1280px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    #blogs.blogs{
-      width: 853px;
-      height: 1280px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
 }
@@ -723,7 +724,7 @@
       height: auto;
    }
    footer{
-      width: 100%px;
+      width: 100%;
       height: auto;
       margin-top:2000px;
    }
@@ -734,38 +735,38 @@
    h5.heading_details{width: 380px;}
    p.para_details{width: 380px;}
        .header{
-      width: 412px;
-      height: 914px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .about{
-      width: 412px;
-      height: 914px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .service{
-      width: 412px;
-      height: 914px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .certification{
-      width: 412px;
-      height: 914px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .project{
-      width: 412px;
-      height: 914px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .blogs{
-      width: 412px;
-      height: 914px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    #blogs.blogs{
-      width: 412px;
-      height: 914px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
 }
@@ -777,7 +778,7 @@
       height: auto;
    }
    footer{
-      width: 100%px;
+      width: 100%;
       height: auto;
       margin-top:2000px;
    }
@@ -788,38 +789,38 @@
    h5.heading_details{width: 380px;}
    p.para_details{width: 380px;}
        .header{
-      width: 1024px;
-      height: 600px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .about{
-      width: 1024px;
-      height: 600px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .service{
-      width: 1024px;
-      height: 600px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .certification{
-      width: 1024px;
-      height: 600px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .project{
-      width: 1024px;
-      height: 600px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .blogs{
-      width: 1024px;
-      height: 600px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    #blogs.blogs{
-      width: 1024px;
-      height: 600px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
 }
@@ -831,7 +832,7 @@
       height: auto;
    }
    footer{
-      width: 100%px;
+      width: 100%;
       height: auto;
       margin-top:2000px;
    }
@@ -842,38 +843,38 @@
    h5.heading_details{width: 380px;}
    p.para_details{width: 380px;}
        .header{
-      width: 1280px;
-      height: 800px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .about{
-      width: 1280px;
-      height: 800px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .service{
-      width: 1280px;
-      height: 800px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .certification{
-      width: 1280px;
-      height: 800px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .project{
-      width: 1280px;
-      height: 800px;
+     width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    .blogs{
-      width: 1280px;
-      height: 800px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
    #blogs.blogs{
-      width: 1280px;
-      height: 800px;
+      width: 100%;
+      height: auto;
       margin-top: 100px;
    }
 }
@@ -893,7 +894,7 @@
       height: auto;
    }
    footer{
-      width: 100%px;
+      width: 100%;
       height: auto;
       margin-top:2000px;
    }
