@@ -61,11 +61,14 @@
       height: auto;
       margin-top: 2000px;
    }
-   h2.heading_skills{
+/*    h2.heading_skills{
       margin-top: 300px;
    }
    p.awards_intro{
       margin-top:300px;
+   } */
+   .award_information{
+      margin-top: 300px;
    }
 /*    #blogs.blogs{
       width: 100%;
