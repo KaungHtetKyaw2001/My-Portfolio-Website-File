@@ -14,19 +14,131 @@
     }
 }
 
-/* iPhone 14 Pro Max Size */
-
-@media(max-width:768px)
-{
-   *{
-      width:768px;
+/* iPhone SE Size */
+@media(max-width:375px) and (max-height:667px){
+   .header,.about,.service,.certification,.project,.blogs{
+      width: 375px;
+      height: 667px;
+   }
+}
+/* iPhone XR Size  */
+@media(max-width:414px) and (max-height:896px){
+      .header,.about,.service,.certification,.project,.blogs{
+      width: 414px;
+      height: 896px;
+   }
+}
+/* iPhone 12 Pro Size */
+@media(max-width:390px) and (max-height:844px){
+      .header,.about,.service,.certification,.project,.blogs{
+      width: 390px;
+      height: 844px;
+   }
+}
+/* iPhone 14 Pro Size */
+@media(max-width:430px) and (max-height:932px){
+      .header,.about,.service,.certification,.project,.blogs{
+      width: 430px;
+      height: 932px;
+   }
+}
+/* Pixel 7 Size */
+@media(max-width:412px) and (max-height:915px){
+      .header,.about,.service,.certification,.project,.blogs{
+      width: 412px;
+      height: 915px;
+   }
+}
+/* Samsung Galaxy S8 Size */
+@media(max-width:360px) and (max-height:740px){
+      .header,.about,.service,.certification,.project,.blogs{
+      width: 360px;
+      height: 740px;
+   }
+}
+/* Samsung Galaxy S20 Ultra Size */
+@media(max-width:412px) and (max-height:915px){
+      .header,.about,.service,.certification,.project,.blogs{
+      width: 412px;
+      height: 915px;
+   }
+}
+/* iPad Mini Size */
+@media(max-width:768px) and (max-height:1024px){
+      .header,.about,.service,.certification,.project,.blogs{
+      width: 768px;
+      height: 1024px;
+   }
+}
+/* iPad Air Size */
+@media(max-width:820px) and (max-height:1180px){
+      .header,.about,.service,.certification,.project,.blogs{
+      width: 820px;
+      height: 1180px;
+   }
+}
+/* Surface Pro 7  Size */
+@media(max-width:912px) and (max-height:1368px){
+      .header,.about,.service,.certification,.project,.blogs{
+      width: 912px;
+      height: 1368px;
+   }
+}
+/* Surface Duo Size */
+@media(max-width:540px) and (max-height:720px){
+      .header,.about,.service,.certification,.project,.blogs{
+      width: 540px;
+      height: 720px;
+   }
+}
+/* Galaxy Z Fold 5 Size */
+@media(max-width:344px) and (max-height:882px){
+      .header,.about,.service,.certification,.project,.blogs{
+      width: 344px;
+      height: 882px;
+   }
+}
+/* Asus Zen book Size */
+@media(max-width:853px) and (max-height:1280px){
+      .header,.about,.service,.certification,.project,.blogs{
+      width: 853px;
+      height: 1280px;
+   }
+}
+/* Samsung Galaxy A51/71 Size */
+@media(max-width:412px) and (max-height:914px){
+      .header,.about,.service,.certification,.project,.blogs{
+      width: 412px;
+      height: 914px;
+   }
+}
+/* Nest Hub Size */
+@media(max-width:1024px) and (max-height:600px){
+      .header,.about,.service,.certification,.project,.blogs{
+      width: 1024px;
+      height: 600px;
+   }
+}
+/* Nest Hub Max Size */
+@media(max-width:1280px) and (max-height:800px){
+      .header,.about,.service,.certification,.project,.blogs{
+      width: 1280px;
+      height: 800px;
    }
 }
 
-/* iPad Size */
-@media(max-width:1024px) {
+@media(max-width:768px)
+{
+   .header,.about,.service,.certification,.project,.blogs{
+      width: 768px;
+   }
+}
+
+/* iPad Pro Size */
+@media(max-width:1024px) and (max-height:1366px){
    .header,.about,.service,.certification,.project,.blogs{
       width: 1024px;
+      height: 1366px;
    }
    
    .img_about {
