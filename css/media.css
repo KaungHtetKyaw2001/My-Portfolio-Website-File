@@ -1,6 +1,6 @@
 /* Global Media Queries */
 @media(max-width:1360px) {
-    section.home{width: 100%;}
+    section.home{display: none;}
     h5.heading_sm{margin-top:300px;}
    h2.heading_lg{margin-top:300px;}
    #home.home{
@@ -97,7 +97,7 @@
 
 /* iPhone SE Size */
 @media(max-width:375px) and (max-height:667px){
-    section.home{width: 100%;}
+    section.home{display: none;}
    h5.heading_sm{margin-top:300px;}
    h2.heading_lg{margin-top:300px;}
    #home.home{
@@ -198,7 +198,7 @@
 }
 /* iPhone XR Size  */
 @media(max-width:414px) and (max-height:896px){
-    section.home{width: 100%;}
+    section.home{display: none;}
    .home_content{margin-top:1000px;}
    h5.heading_sm{margin-top:300px;}
    h2.heading_lg{margin-top:300px;}
@@ -294,7 +294,7 @@
 }
 /* iPhone 12 Pro Size */
 @media(max-width:390px) and (max-height:844px){
-    section.home{width: 100%;}
+    section.home{display: none;}
    .home_content{margin-top:1000px;}
    h5.heading_sm{margin-top:300px;}
    h2.heading_lg{margin-top:300px;}
@@ -389,7 +389,7 @@
 }
 /* iPhone 14 Pro Size */
 @media(max-width:430px) and (max-height:932px){
-    section.home{width: 100%;}
+    section.home{display: none;}
    .home_content{margin-top:1000px;}
    h5.heading_sm{margin-top:300px;}
    h2.heading_lg{margin-top:300px;}
@@ -484,7 +484,7 @@
 }
 /* Pixel 7 Size */
 @media(max-width:412px) and (max-height:915px){
-    section.home{width: 100%;}
+    section.home{display: none;}
    .home_content{margin-top:1000px;}
    h5.heading_sm{margin-top:300px;}
    h2.heading_lg{margin-top:300px;}
@@ -579,7 +579,7 @@
 }
 /* Samsung Galaxy S8 Size */
 @media(max-width:360px) and (max-height:740px){
-    section.home{width: 100%;}
+    section.home{display: none;}
    .home_content{margin-top:1000px;}
    h5.heading_sm{margin-top:300px;}
    h2.heading_lg{margin-top:300px;}
@@ -675,7 +675,7 @@
 }
 /* Samsung Galaxy S20 Ultra Size */
 @media(max-width:412px) and (max-height:915px){
-    section.home{width: 100%;}
+    section.home{display: none;}
    .home_content{margin-top:1000px;}
    h5.heading_sm{margin-top:300px;}
    h2.heading_lg{margin-top:300px;}
@@ -770,7 +770,7 @@
 }
 /* iPad Mini Size */
 @media(max-width:768px) and (max-height:1024px){
-    section.home{width: 100%;}
+    section.home{display: none;}
    #home.home{
       margin-top: 500px;
    }
@@ -861,7 +861,7 @@
 }
 /* iPad Air Size */
 @media(max-width:820px) and (max-height:1180px){
-    section.home{width: 100%;}
+    section.home{display: none;}
    #home.home{
       margin-top: 500px;
    }
@@ -952,7 +952,7 @@
 }
 /* Surface Pro 7  Size */
 @media(max-width:912px) and (max-height:1368px){
-    section.home{width: 100%;}
+    section.home{display: none;}
    #home.home{
       margin-top: 500px;
    }
@@ -1043,7 +1043,7 @@
 }
 /* Surface Duo Size */
 @media(max-width:540px) and (max-height:720px){
-    section.home{width: 100%;}
+    section.home{display: none;}
    .home_content{margin-top:1000px;}
    h5.heading_sm{margin-top:300px;}
    h2.heading_lg{margin-top:300px;}
@@ -1137,7 +1137,7 @@
 }
 /* Galaxy Z Fold 5 Size */
 @media(max-width:344px) and (max-height:882px){
-    section.home{width: 100%;}
+    section.home{display: none;}
    .home_content{margin-top:1000px;}
    h5.heading_sm{margin-top:300px;}
    h2.heading_lg{margin-top:300px;}
@@ -1233,7 +1233,7 @@
 }
 /* Asus Zen book Size */
 @media(max-width:853px) and (max-height:1280px){
-    section.home{width: 100%;}
+    section.home{display: none;}
    #home.home{
       margin-top: 500px;
    }
@@ -1324,7 +1324,7 @@
 }
 /* Samsung Galaxy A51/71 Size */
 @media(max-width:412px) and (max-height:914px){
-    section.home{width: 100%;}
+    section.home{display: none;}
    #home.home{
       margin-top: 500px;
    }
@@ -1415,7 +1415,7 @@
 }
 /* Nest Hub Size */
 @media(max-width:1024px) and (max-height:600px){
-    section.home{width: 100%;}
+    section.home{display: none;}
    #home.home{
       margin-top: 500px;
    }
@@ -1506,7 +1506,7 @@
 }
 /* Nest Hub Max Size */
 @media(max-width:1280px) and (max-height:800px){
-    section.home{width: 100%;}
+    section.home{display: none;}
    #home.home{
       margin-top: 500px;
    }
@@ -1599,7 +1599,7 @@
 
 @media(max-width:768px)
 {
-    section.home{width: 100%;}
+    section.home{display: none;}
    h5.heading_sm{margin-top:300px;}
    h2.heading_lg{margin-top:300px;}
    #home.home{
@@ -1694,7 +1694,7 @@
 
 /* iPad Pro Size */
 @media(max-width:1024px) and (max-height:1366px){
-    section.home{width: 100%;}
+    section.home{display: none;}
    #home.home{
       margin-top: 500px;
    }
@@ -1833,7 +1833,7 @@
 }
 
 @media(max-width: 992px) {
-    section.home{width: 100%;}
+    section.home{display: none;}
     h5.heading_sm{margin-top:300px;}
    h2.heading_lg{margin-top:300px;}
    #home.home{
@@ -1926,7 +1926,7 @@
    }
 
 @media(max-width: 768px) {
-    section.home{width: 100%;}
+    section.home{display: none;}
     .heading-lg {
         font-size: 66px;
     }
@@ -1968,7 +1968,7 @@
 }
 
 @media(max-width: 576px) {
-    section.home{width: 100%;}
+    section.home{display: none;}
     h5.heading_sm{margin-top:300px;}
    h2.heading_lg{margin-top:300px;}
    #home.home{
