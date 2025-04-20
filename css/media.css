@@ -159,12 +159,12 @@
    }
    */
   p.awards_intro{
-      margin-left:-250px;
+      text-align:center;
        width:100%;
    }
 
     p.certificate_intro{
-      margin-left:-250px;
+      text-align:center;
        width:100%;
    }
    .award_information{
