@@ -478,8 +478,9 @@
  .certification{
 	width: 70%;
 	height: 70%;
-	margin-top: 1400px;
-	margin-left: 250px;
+/* 	margin-top: 1400px;
+	margin-left: 250px; */
+	 margin: auto;
  }
 .awards_intro{
 	font-size: 16px;
@@ -488,8 +489,9 @@
 	color:rgba(0, 0, 0, 0.582);
 	line-height: 29px;
 	/* max-width: 680px; */
-	margin-left: 200px;
-	margin-bottom: 30px;
+/* 	margin-left: 200px;
+	margin-bottom: 30px; */
+	margin: auto;
 }
 
  .award_information{
@@ -498,8 +500,9 @@
     justify-content: center;
     align-items: center;
     height: 40vh;
-    margin-left:40px;
-	 margin-bottom:30px;
+/*     margin-left:40px;
+	 margin-bottom:30px; */
+	 margin: auto;
  }
 
  .heading_skills2{
@@ -518,7 +521,8 @@
 	color:rgba(0, 0, 0, 0.582);
 	line-height: 29px;
 	/* max-width: 680px; */
-	margin-left: 280px;
+/* 	margin-left: 280px; */
+	margin: auto;
 }
 
 
@@ -528,7 +532,8 @@
     justify-content: center;
     align-items: center;
     height: 40vh;
-    margin-left:40px;
+/*     margin-left:40px; */
+	 margin:auto;
  }
 
  .heading_project{
@@ -549,8 +554,9 @@
 	line-height: 29px;
 	/* max-width: 680px; */
 	/* margin-left: 250px; */
-	margin-top: -350px;
-	margin-bottom: 450px;
+/* 	margin-top: -350px;
+	margin-bottom: 450px; */
+	margin:auto;
 }
 
  .projects_information{
@@ -559,7 +565,8 @@
     justify-content: center;
     align-items: center;
     height: 40vh;
-    margin-left:40px;
+/*     margin-left:40px; */
+	 margin:auto;
  }
 
  .blogs{
