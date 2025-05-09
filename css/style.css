@@ -538,10 +538,13 @@
 
  .heading_project{
 	text-align: center;
-	font-size: 40px;
+	font-size: 37px;
 	text-transform: uppercase;
-	background:linear-gradient(to right, #ed0000 42%, #6850de 58%);
 	font-weight: 700;
+	background-color: #ed0000;
+	background:linear-gradient(to right, #ed0000 42%, #6850de 58%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	margin: 20px 0px;
 	margin-top: 100px;
 	margin-bottom: 400px;
