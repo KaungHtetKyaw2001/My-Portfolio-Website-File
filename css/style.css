@@ -539,8 +539,9 @@
  .heading_project{
 	text-align: center;
 	font-size: 40px;
-	color: rgba(0, 0, 0, 0.619);
-	font-weight: 400;
+	text-transform: uppercase;
+	background:linear-gradient(to right, #ed0000 42%, #6850de 58%);
+	font-weight: 700;
 	margin: 20px 0px;
 	margin-top: 100px;
 	margin-bottom: 400px;
