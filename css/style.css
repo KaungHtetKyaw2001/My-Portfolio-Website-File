@@ -536,6 +536,10 @@
 /* 	 margin:auto; */
  }
 
+.project{
+	margin: auto;
+}
+
  .heading_project{
 	text-align: center;
 	font-size: 37px;
