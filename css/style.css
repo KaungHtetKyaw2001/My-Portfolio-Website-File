@@ -573,6 +573,95 @@
 /* 	 margin:auto; */
  }
 
+/* publications */
+ .publications{
+	width: 70%;
+	height: 100vh;
+	margin: auto;
+	margin-top: 800px;
+ }
+
+ .publications_container{
+	margin-top: 30px;
+	padding-top: 55px;
+
+ }
+
+ .content_publication{
+	background-color: white;
+	width: 320px;
+	height: 420px;	
+	box-shadow: 0px 4px 30px rgb(140, 152, 164 /20%);
+	transition: 0.2s ease-in;
+ }
+
+ .blog_links{
+	margin-left: 10px;
+ }
+
+ .img_publication{
+	height: 100%;
+	height: 240px;
+ }
+
+ .img_content_publication{
+	width: 100%;
+	height: 100%;
+ }
+
+ .publication_category{
+	display: inline-block;
+	text-decoration: none;
+	font-size: 17px;
+	color: rgba(231, 27, 27, 0.961);
+	margin-top: 20px;
+	margin: 4px 12px;
+	margin-top: 20px;
+ }
+
+ .heading_content_publication{
+	font-size: 15px;
+	line-height: 34px;
+	margin: 6px 12px;
+	color: rgba(0, 0, 0, 0.621);
+ }
+
+ .para_publications{
+	font-size: 13px;
+	margin: 2px 12px;
+	color: rgba(0, 0, 0, 0.47);
+	font-weight: 400;
+ }
+
+ .content_publication_2{
+	height: 410px;
+ }
+
+ .content_publication:hover{
+	box-shadow: 0px 4px 30px rgba(140, 152, 164, 0.594);
+	cursor: pointer;
+ }
+
+ .btn_publications{
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	background-color: rgb(253, 68, 68);
+	width: 140px;
+	margin: 63px auto;
+	padding: 13px 0px;
+	border-radius: 6px;
+	color: white;
+ }
+
+ .btn_publications:hover{
+background-color: rgb(255, 29, 29);
+color: white;
+
+ }
+/* End section of publications */
+
+
  .blogs{
 	width: 70%;
 	height: 100vh;
