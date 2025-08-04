@@ -38,7 +38,7 @@
    .service{
       width: 100%;
       height: auto;
-      margin-top: 400px;
+      margin-top: 200px;
    }
    .certification{
       width: 100%;
@@ -49,12 +49,17 @@
    .project{
       width: 100%;
       height: auto;
-      margin-top: 500px;
+      margin-top: 850px;
+   }
+    .publications{
+      width: 100%;
+      height: auto;
+      margin-top: 1000px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 2000px;
+      margin-top: 1500px;
    }
 /*    h2.heading_skills{
       margin-top: 300px;
@@ -138,7 +143,7 @@
    .service{
       width: 100%;
       height: auto;
-      margin-top: 400px;
+      margin-top: 200px;
    }
    .certification{
       width: 100%;
@@ -149,12 +154,17 @@
    .project{
       width: 100%;
       height: auto;
-      margin-top: 500px;
+      margin-top: 850px;
+   }
+    .publications{
+      width: 100%;
+      height: auto;
+      margin-top: 1000px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 2000px;
+      margin-top: 1500px;
    }
 /*    h2.heading_skills{
       margin-top: 300px;
@@ -242,7 +252,7 @@
    .service{
       width: 100%;
       height: auto;
-      margin-top: 400px;
+      margin-top: 200px;
    }
    .certification{
       width: 100%;
@@ -251,14 +261,19 @@
        margin-right: 250px;
    }
    .project{
-      width: 80%;
+      width: 100%;
       height: auto;
-      margin-top: 500px;
+      margin-top: 850px;
+   }
+    .publications{
+      width: 100%;
+      height: auto;
+      margin-top: 1000px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 2000px;
+      margin-top: 1500px;
    }
   p.awards_intro{
      margin-left:20px;
@@ -339,10 +354,10 @@
       height: auto;
       margin-top: 10px;
    }
-   .service{
+  .service{
       width: 100%;
       height: auto;
-      margin-top: 400px;
+      margin-top: 200px;
    }
    .certification{
       width: 100%;
@@ -353,12 +368,17 @@
    .project{
       width: 100%;
       height: auto;
-      margin-top: 500px;
+      margin-top: 850px;
+   }
+    .publications{
+      width: 100%;
+      height: auto;
+      margin-top: 1000px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 2000px;
+      margin-top: 1500px;
    }
    p.awards_intro{
      margin-left:20px;
@@ -441,7 +461,7 @@
    .service{
       width: 100%;
       height: auto;
-      margin-top: 400px;
+      margin-top: 200px;
    }
    .certification{
       width: 100%;
@@ -452,12 +472,17 @@
    .project{
       width: 100%;
       height: auto;
-      margin-top: 500px;
+      margin-top: 850px;
+   }
+    .publications{
+      width: 100%;
+      height: auto;
+      margin-top: 1000px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 2000px;
+      margin-top: 1500px;
    }
    
    p.awards_intro{
@@ -541,7 +566,7 @@
    .service{
       width: 100%;
       height: auto;
-      margin-top: 400px;
+      margin-top: 200px;
    }
    .certification{
       width: 100%;
@@ -552,12 +577,17 @@
    .project{
       width: 100%;
       height: auto;
-      margin-top: 500px;
+      margin-top: 850px;
+   }
+    .publications{
+      width: 100%;
+      height: auto;
+      margin-top: 1000px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 2000px;
+      margin-top: 1500px;
    }
   
   p.awards_intro{
@@ -641,7 +671,7 @@
    .service{
       width: 100%;
       height: auto;
-      margin-top: 400px;
+      margin-top: 200px;
    }
    .certification{
       width: 100%;
@@ -652,12 +682,17 @@
    .project{
       width: 100%;
       height: auto;
-      margin-top: 500px;
+      margin-top: 850px;
+   }
+    .publications{
+      width: 100%;
+      height: auto;
+      margin-top: 1000px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 2000px;
+      margin-top: 1500px;
    }
    p.awards_intro{
       margin-left:20px;
@@ -740,7 +775,7 @@
    .service{
       width: 100%;
       height: auto;
-      margin-top: 400px;
+      margin-top: 200px;
    }
    .certification{
       width: 100%;
@@ -751,12 +786,17 @@
    .project{
       width: 100%;
       height: auto;
-      margin-top: 500px;
+      margin-top: 850px;
+   }
+    .publications{
+      width: 100%;
+      height: auto;
+      margin-top: 1000px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 2000px;
+      margin-top: 1500px;
    }
   p.awards_intro{
       margin-left:20px;
@@ -837,7 +877,7 @@
    .service{
       width: 100%;
       height: auto;
-      margin-top: 400px;
+      margin-top: 200px;
    }
    .certification{
       width: 100%;
@@ -848,12 +888,17 @@
    .project{
       width: 100%;
       height: auto;
-      margin-top: 500px;
+      margin-top: 850px;
+   }
+    .publications{
+      width: 100%;
+      height: auto;
+      margin-top: 1000px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 2000px;
+      margin-top: 1500px;
    }
    p.awards_intro{
       margin-left:20px;
@@ -933,7 +978,7 @@
    .service{
       width: 100%;
       height: auto;
-      margin-top: 400px;
+      margin-top: 200px;
    }
    .certification{
       width: 100%;
@@ -944,12 +989,17 @@
    .project{
       width: 100%;
       height: auto;
-      margin-top: 500px;
+      margin-top: 850px;
+   }
+    .publications{
+      width: 100%;
+      height: auto;
+      margin-top: 1000px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 2000px;
+      margin-top: 1500px;
    }
 
    p.awards_intro{
@@ -1026,7 +1076,7 @@
    .service{
       width: 100%;
       height: auto;
-      margin-top: 400px;
+      margin-top: 200px;
    }
    .certification{
       width: 100%;
@@ -1037,12 +1087,17 @@
    .project{
       width: 100%;
       height: auto;
-      margin-top: 500px;
+      margin-top: 850px;
+   }
+    .publications{
+      width: 100%;
+      height: auto;
+      margin-top: 1000px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 2000px;
+      margin-top: 1500px;
    }
   p.awards_intro{
       margin-left:20px;
@@ -1125,7 +1180,7 @@
    .service{
       width: 100%;
       height: auto;
-      margin-top: 400px;
+      margin-top: 200px;
    }
    .certification{
       width: 100%;
@@ -1136,12 +1191,17 @@
    .project{
       width: 100%;
       height: auto;
-      margin-top: 500px;
+      margin-top: 850px;
+   }
+    .publications{
+      width: 100%;
+      height: auto;
+      margin-top: 1000px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 2000px;
+      margin-top: 1500px;
    }
    p.awards_intro{
       margin-left:20px;
@@ -1221,10 +1281,10 @@
       height: auto;
       margin-top: 10px;
    }
-   .service{
+  .service{
       width: 100%;
       height: auto;
-      margin-top: 400px;
+      margin-top: 200px;
    }
    .certification{
       width: 100%;
@@ -1235,12 +1295,17 @@
    .project{
       width: 100%;
       height: auto;
-      margin-top: 500px;
+      margin-top: 850px;
+   }
+    .publications{
+      width: 100%;
+      height: auto;
+      margin-top: 1000px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 2000px;
+      margin-top: 1500px;
    }
   p.awards_intro{
       margin-left:20px;
@@ -1316,7 +1381,7 @@
    .service{
       width: 100%;
       height: auto;
-      margin-top: 400px;
+      margin-top: 200px;
    }
    .certification{
       width: 100%;
@@ -1327,12 +1392,17 @@
    .project{
       width: 100%;
       height: auto;
-      margin-top: 500px;
+      margin-top: 850px;
+   }
+    .publications{
+      width: 100%;
+      height: auto;
+      margin-top: 1000px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 2000px;
+      margin-top: 1500px;
    }
   p.awards_intro{
       margin-left:20px;
@@ -1412,7 +1482,7 @@
    .service{
       width: 100%;
       height: auto;
-      margin-top: 400px;
+      margin-top: 200px;
    }
    .certification{
       width: 100%;
@@ -1423,12 +1493,17 @@
    .project{
       width: 100%;
       height: auto;
-      margin-top: 500px;
+      margin-top: 850px;
+   }
+    .publications{
+      width: 100%;
+      height: auto;
+      margin-top: 1000px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 2000px;
+      margin-top: 1500px;
    }
   p.awards_intro{
       margin-left:20px;
@@ -1508,7 +1583,7 @@
    .service{
       width: 100%;
       height: auto;
-      margin-top: 400px;
+      margin-top: 200px;
    }
    .certification{
       width: 100%;
@@ -1519,12 +1594,17 @@
    .project{
       width: 100%;
       height: auto;
-      margin-top: 500px;
+      margin-top: 850px;
+   }
+    .publications{
+      width: 100%;
+      height: auto;
+      margin-top: 1000px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 2000px;
+      margin-top: 1500px;
    }
  p.awards_intro{
       margin-left:20px;
@@ -1604,7 +1684,7 @@
    .service{
       width: 100%;
       height: auto;
-      margin-top: 400px;
+      margin-top: 200px;
    }
    .certification{
       width: 100%;
@@ -1615,12 +1695,17 @@
    .project{
       width: 100%;
       height: auto;
-      margin-top: 500px;
+      margin-top: 850px;
+   }
+    .publications{
+      width: 100%;
+      height: auto;
+      margin-top: 1000px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 2000px;
+      margin-top: 1500px;
    }
    p.awards_intro{
       margin-left:20px;
@@ -1705,7 +1790,7 @@
    .service{
       width: 100%;
       height: auto;
-      margin-top: 400px;
+      margin-top: 200px;
    }
    .certification{
       width: 100%;
@@ -1716,12 +1801,17 @@
    .project{
       width: 100%;
       height: auto;
-      margin-top: 500px;
+      margin-top: 850px;
+   }
+    .publications{
+      width: 100%;
+      height: auto;
+      margin-top: 1000px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 2000px;
+      margin-top: 1500px;
    }
 /*    h2.heading_skills{
       margin-top: 300px;
@@ -1802,7 +1892,7 @@
    .service{
       width: 100%;
       height: auto;
-      margin-top: 400px;
+      margin-top: 200px;
    }
    .certification{
       width: 100%;
@@ -1813,12 +1903,17 @@
    .project{
       width: 100%;
       height: auto;
-      margin-top: 500px;
+      margin-top: 850px;
+   }
+    .publications{
+      width: 100%;
+      height: auto;
+      margin-top: 1000px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 2000px;
+      margin-top: 1500px;
    }
 
    p.awards_intro{
@@ -1950,7 +2045,7 @@
    .service{
       width: 100%;
       height: auto;
-      margin-top: 400px;
+      margin-top: 200px;
    }
    .certification{
       width: 100%;
@@ -1961,12 +2056,17 @@
    .project{
       width: 100%;
       height: auto;
-      margin-top: 500px;
+      margin-top: 850px;
+   }
+    .publications{
+      width: 100%;
+      height: auto;
+      margin-top: 1000px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 2000px;
+      margin-top: 1500px;
    }
 /*    h2.heading_skills{
       margin-top: 300px;
@@ -2091,7 +2191,7 @@
    .service{
       width: 100%;
       height: auto;
-      margin-top: 400px;
+      margin-top: 200px;
    }
    .certification{
       width: 100%;
@@ -2102,12 +2202,17 @@
    .project{
       width: 100%;
       height: auto;
-      margin-top: 500px;
+      margin-top: 850px;
+   }
+    .publications{
+      width: 100%;
+      height: auto;
+      margin-top: 1000px;
    }
    .blogs{
       width: 100%;
       height: auto;
-      margin-top: 2000px;
+      margin-top: 1500px;
    }
 /*    h2.heading_skills{
       margin-top: 300px;
