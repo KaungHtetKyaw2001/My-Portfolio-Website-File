@@ -599,7 +599,7 @@
 	height: 500px;	
 	box-shadow: 0px 4px 30px rgb(140, 152, 164 /20%);
 	transition: 0.2s ease-in;
-	font-size: 10px;
+	/* font-size: 10px; */
  }
 
  .blog_links{
@@ -627,7 +627,7 @@
  }
 
  .heading_content_publication{
-	font-size: 15px;
+	font-size: 10px;
 	line-height: 34px;
 	margin: 6px 12px;
 	color: rgba(0, 0, 0, 0.621);
