@@ -134,7 +134,9 @@
     .project {
         margin-bottom: 100px; /* Reduce the massive bottom margin */
     }
-
+    .projects_information{
+        margin-bottom: 100px;
+    }
 
     /* --- PUBLICATIONS & BLOGS GRID FIXES --- */
 
