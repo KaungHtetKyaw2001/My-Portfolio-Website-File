@@ -134,23 +134,56 @@
     .project {
         margin-bottom: 100px; /* Reduce the massive bottom margin */
     }
-    .projects_information{
-        margin-bottom: 500px;
+    /* FIX 1: Projects Table Spacing */
+    .projects_information {
+        /* This removes the massive margin you had in the desktop CSS: margin-top: 500px; */
+        margin-top: 30px; 
+        height: auto;
+        /* Ensure the content is aligned for mobile */
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 5px;
     }
 
     /* --- PUBLICATIONS & BLOGS GRID FIXES --- */
 
-    .publications_container, .blogs_container {
-        flex-direction: column; /* Ensure all cards stack vertically */
-        padding: 0;
+    /* FIX 2: Vertical Section Overlap */
+    
+    .publications {
+        margin-top: 100px; /* Greatly reduce the desktop margin-top: 900px; */
+        height: auto;
     }
     
-    /* Make cards full width and center them */
+    .blogs {
+        margin-top: 100px; /* Greatly reduce the desktop margin-top: 800px; */
+        height: auto;
+    }
+    
+    /* FIX 3: Overlapping Cards */
+    
+    /* This forces the cards to take up the full available width and stack */
+    .publications_container, .blogs_container {
+        /* We'll use flexbox to handle the stacking and wrapping */
+        display: flex; 
+        flex-direction: column; /* Explicitly stack them */
+        align-items: center; /* Center the stack */
+        padding: 0;
+        margin-top: 30px;
+    }
+    
+    /* The individual cards need to be full width and have space between them */
     .content_publication, .content_blog {
         width: 95%; 
-        max-width: 400px; /* Prevent cards from getting too wide on tablets */
+        max-width: 400px; 
         height: auto;
-        margin: 20px auto; /* Center the card and add vertical spacing */
+        margin: 20px auto; /* This margin is crucial for vertical spacing between cards */
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Ensure the 'MY BLOGS' element doesn't interfere with flow */
+    .publication_category, .blog_category {
+        display: block; /* Make this element take its own line */
+        text-align: center;
     }
 
 
