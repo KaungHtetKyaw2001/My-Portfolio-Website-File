@@ -1,57 +1,59 @@
 import nodemailer from 'nodemailer';
 import axios from 'axios';
 
-// REOON UPDATE: Renamed function for clarity
+// --- NEW REOON VALIDATION FUNCTION ---
 const validateEmailWithReoon = async (email) => {
-  // Make sure to update your .env file to use REOON_API_KEY
-  const apiKey = process.env.REOON_API_KEY; 
+  // This pulls the key you just saved in your .env file
+  const apiKey = process.env.REOON_API_KEY;
+  
   console.log(`Validating email with Reoon API: ${email}`);
   
   try {
-    // 1. New URL and Parameters (mode=quick is important!)
+    // Construct the Reoon URL with 'mode=quick' for fast portfolio responses
     const url = `https://emailverifier.reoon.com/api/v1/verify?key=${apiKey}&email=${email}&mode=quick`;
     
     const response = await axios.get(url);
-    console.log('Reoon API Response:', response.data);
+    const data = response.data;
+    
+    console.log('Reoon API Response:', data);
 
-    // Allow emails from trusted domains like .edu, .org, etc.
+    // 1. Check Trusted Domains (Optimistic check)
+    // If it's a government or university email, we often trust it immediately.
     const trustedDomains = ['edu', 'org', 'gov', 'ac', 'int', 'mil']; 
-
     const emailDomain = email.split('@')[1];
     const domainExtension = emailDomain.split('.').pop(); 
-    
-    // 2. Logic Check: Reoon uses 'status' just like ZeroBounce
-    const status = response.data.status;
 
-    // If trusted domain, allow immediately
     if (trustedDomains.includes(domainExtension)) {
       return true;
     }
 
-    // Explicitly Valid
-    if (status === 'valid') {
+    // 2. Check Reoon Status
+    const status = data.status;
+
+    // 'valid' means the email definitely exists.
+    // 'safe' is sometimes used by Reoon for catch-all domains that look safe.
+    if (status === 'valid' || status === 'safe') {
       return true; 
     }
 
-    // 3. Catch Reoon specific bad statuses
-    // Reoon might return 'invalid', 'disposable', or 'spamtrap'
+    // 3. Block Bad Statuses
     if (status === 'invalid' || status === 'disposable' || status === 'spamtrap') {
       return false; 
     }
 
-    // Default: If status is 'unknown' or 'catch_all', we usually allow it for portfolios
+    // 4. Default Allow
+    // If status is 'unknown' or 'catch_all', we allow it so we don't block real users.
     return true; 
 
   } catch (error) {
     console.error('Error while validating email with Reoon API:', error);
-    // CRITICAL CHANGE: Return TRUE on error. 
-    // If you run out of credits, don't block legitimate users!
+    // FAIL OPEN: If the API fails or you run out of credits, allow the email.
     return true; 
   }
 };
 
 
-// Custom email validation function (Kept exactly as you had it)
+// --- CUSTOM REGEX VALIDATION (Kept exactly as you had it) ---
 const validateEmail = (email) => {
   console.log(`Validating email with custom rules: ${email}`);
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -75,6 +77,7 @@ const validateEmail = (email) => {
   return null; // Valid email
 };
 
+// --- MAIN HANDLER ---
 export default async (req, res) => {
   if (req.method === 'POST') {
     try {
@@ -82,18 +85,18 @@ export default async (req, res) => {
 
       console.log(`Received form data: name=${name}, email=${email}, message=${message}`);
 
+      // Check if all fields are provided
       if (!name || !email || !message) {
         return res.status(400).json({ message: 'All fields are required.' });
       }
 
-      // --- SWITCHED TO NEW FUNCTION HERE ---
+      // 1. Run Reoon Validation
       const isValidEmail = await validateEmailWithReoon(email);
-      
       if (!isValidEmail) {
         return res.status(400).json({ message: 'Invalid or disposable email address detected.' });
       }
 
-      // Validate email using custom rules
+      // 2. Run Custom Regex Validation
       const emailError = validateEmail(email);
       if (emailError) {
         return res.status(400).json({ message: emailError });
@@ -112,16 +115,18 @@ export default async (req, res) => {
       const mailOptions = {
         from: `"${name}" <kaunghtetkyaw2001@gmail.com>`,
         to: 'kaunghtetkyaw2001@gmail.com',
-        replyTo: email, 
+        replyTo: email,
         subject: `Message from ${name}`,
         text: `You have received a message from ${name} (${email}):\n\n${message}`,
       };
 
       console.log('Sending email with options:', mailOptions);
 
+      // Send the email
       await transporter.sendMail(mailOptions);
       console.log('Email sent successfully!');
       return res.status(200).json({ message: 'Message sent successfully!' });
+
     } catch (error) {
       console.error('Email sending failed:', error);
       return res.status(500).json({ message: 'Error sending message.', error: error.message });
