@@ -3,13 +3,11 @@ import axios from 'axios';
 
 // --- NEW REOON VALIDATION FUNCTION ---
 const validateEmailWithReoon = async (email) => {
-  // This pulls the key you just saved in your .env file
   const apiKey = process.env.REOON_API_KEY;
   
   console.log(`Validating email with Reoon API: ${email}`);
   
   try {
-    // Construct the Reoon URL with 'mode=quick' for fast portfolio responses
     const url = `https://emailverifier.reoon.com/api/v1/verify?key=${apiKey}&email=${email}&mode=quick`;
     
     const response = await axios.get(url);
@@ -17,8 +15,6 @@ const validateEmailWithReoon = async (email) => {
     
     console.log('Reoon API Response:', data);
 
-    // 1. Check Trusted Domains (Optimistic check)
-    // If it's a government or university email, we often trust it immediately.
     const trustedDomains = ['edu', 'org', 'gov', 'ac', 'int', 'mil']; 
     const emailDomain = email.split('@')[1];
     const domainExtension = emailDomain.split('.').pop(); 
@@ -27,33 +23,26 @@ const validateEmailWithReoon = async (email) => {
       return true;
     }
 
-    // 2. Check Reoon Status
     const status = data.status;
 
-    // 'valid' means the email definitely exists.
-    // 'safe' is sometimes used by Reoon for catch-all domains that look safe.
     if (status === 'valid' || status === 'safe') {
       return true; 
     }
 
-    // 3. Block Bad Statuses
     if (status === 'invalid' || status === 'disposable' || status === 'spamtrap') {
       return false; 
     }
 
-    // 4. Default Allow
-    // If status is 'unknown' or 'catch_all', we allow it so we don't block real users.
     return true; 
 
   } catch (error) {
     console.error('Error while validating email with Reoon API:', error);
-    // FAIL OPEN: If the API fails or you run out of credits, allow the email.
     return true; 
   }
 };
 
 
-// --- CUSTOM REGEX VALIDATION (Kept exactly as you had it) ---
+// --- CUSTOM REGEX VALIDATION ---
 const validateEmail = (email) => {
   console.log(`Validating email with custom rules: ${email}`);
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -62,11 +51,11 @@ const validateEmail = (email) => {
   const blockedDomains = ['example.com', 'test.com', 'placeholder.com'];
   const disposableDomains = ['mailinator.com', 'tempmail.com', '10minutemail.com'];
   const invalidPatterns = [
-    /^([a-z])\1+@/,             // Repeated characters
-    /test/i,                    // Contains "test"
-    /example/i,                 // Contains "example"
-    /abc/i,                     // Contains "abc"
-    /^[0-9]+@[a-z]+\.[a-z]+$/,  // All numeric local part
+    /^([a-z])\1+@/,             
+    /test/i,                    
+    /example/i,                 
+    /abc/i,                     
+    /^[0-9]+@[a-z]+\.[a-z]+$/,  
   ];
 
   const domain = email.split('@')[1];
@@ -74,7 +63,7 @@ const validateEmail = (email) => {
   if (disposableDomains.includes(domain.toLowerCase())) return 'Disposable email addresses are not allowed.';
   if (invalidPatterns.some((pattern) => pattern.test(email))) return 'Email address appears fake.';
 
-  return null; // Valid email
+  return null; 
 };
 
 // --- MAIN HANDLER ---
@@ -85,7 +74,6 @@ export default async (req, res) => {
 
       console.log(`Received form data: name=${name}, email=${email}, message=${message}`);
 
-      // Check if all fields are provided
       if (!name || !email || !message) {
         return res.status(400).json({ message: 'All fields are required.' });
       }
@@ -102,16 +90,17 @@ export default async (req, res) => {
         return res.status(400).json({ message: emailError });
       }
 
-      // Set up nodemailer transport
+      // 3. Set up nodemailer transport
+      // --- NUCLEAR FIX: HARDCODED CREDENTIALS ---
+      // We are bypassing process.env to ensure the password is correct.
       const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-          user: process.env.EMAIL_USER,
-          pass: process.env.EMAIL_PASS,
+          user: 'kaunghtetkyaw2001@gmail.com',  // Hardcoded User
+          pass: 'rkxvqtkcztqzbuog',             // Hardcoded App Password (New)
         },
       });
 
-      // Email options
       const mailOptions = {
         from: `"${name}" <kaunghtetkyaw2001@gmail.com>`,
         to: 'kaunghtetkyaw2001@gmail.com',
@@ -122,7 +111,6 @@ export default async (req, res) => {
 
       console.log('Sending email with options:', mailOptions);
 
-      // Send the email
       await transporter.sendMail(mailOptions);
       console.log('Email sent successfully!');
       return res.status(200).json({ message: 'Message sent successfully!' });
@@ -135,7 +123,6 @@ export default async (req, res) => {
     return res.status(405).json({ message: 'Method Not Allowed' });
   }
 };
-
 
 
 // Old Zero Bounce API
