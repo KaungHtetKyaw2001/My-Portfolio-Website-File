@@ -1,68 +1,37 @@
 import nodemailer from 'nodemailer';
 import axios from 'axios';
 
-// --- NEW REOON VALIDATION FUNCTION ---
+// --- REOON VALIDATION ---
 const validateEmailWithReoon = async (email) => {
-  const apiKey = process.env.REOON_API_KEY;
-  
-  console.log(`Validating email with Reoon API: ${email}`);
+  const apiKey = process.env.REOON_API_KEY; // Back to using variable
   
   try {
     const url = `https://emailverifier.reoon.com/api/v1/verify?key=${apiKey}&email=${email}&mode=quick`;
-    
     const response = await axios.get(url);
     const data = response.data;
-    
-    console.log('Reoon API Response:', data);
+    const status = data.status;
 
+    // Allow trusted domains
     const trustedDomains = ['edu', 'org', 'gov', 'ac', 'int', 'mil']; 
     const emailDomain = email.split('@')[1];
     const domainExtension = emailDomain.split('.').pop(); 
+    if (trustedDomains.includes(domainExtension)) return true;
 
-    if (trustedDomains.includes(domainExtension)) {
-      return true;
-    }
-
-    const status = data.status;
-
-    if (status === 'valid' || status === 'safe') {
-      return true; 
-    }
-
-    if (status === 'invalid' || status === 'disposable' || status === 'spamtrap') {
-      return false; 
-    }
-
+    // Check status
+    if (status === 'valid' || status === 'safe') return true; 
+    if (status === 'invalid' || status === 'disposable' || status === 'spamtrap') return false; 
     return true; 
 
   } catch (error) {
-    console.error('Error while validating email with Reoon API:', error);
+    console.error('Reoon validation failed, allowing email:', error);
     return true; 
   }
 };
 
-
-// --- CUSTOM REGEX VALIDATION ---
+// --- CUSTOM VALIDATION ---
 const validateEmail = (email) => {
-  console.log(`Validating email with custom rules: ${email}`);
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) return 'Invalid email format.';
-
-  const blockedDomains = ['example.com', 'test.com', 'placeholder.com'];
-  const disposableDomains = ['mailinator.com', 'tempmail.com', '10minutemail.com'];
-  const invalidPatterns = [
-    /^([a-z])\1+@/,             
-    /test/i,                    
-    /example/i,                 
-    /abc/i,                     
-    /^[0-9]+@[a-z]+\.[a-z]+$/,  
-  ];
-
-  const domain = email.split('@')[1];
-  if (blockedDomains.includes(domain.toLowerCase())) return 'Invalid domain.';
-  if (disposableDomains.includes(domain.toLowerCase())) return 'Disposable email addresses are not allowed.';
-  if (invalidPatterns.some((pattern) => pattern.test(email))) return 'Email address appears fake.';
-
   return null; 
 };
 
@@ -71,53 +40,38 @@ export default async (req, res) => {
   if (req.method === 'POST') {
     try {
       const { name, email, message } = req.body;
+      if (!name || !email || !message) return res.status(400).json({ message: 'All fields required.' });
 
-      console.log(`Received form data: name=${name}, email=${email}, message=${message}`);
-
-      if (!name || !email || !message) {
-        return res.status(400).json({ message: 'All fields are required.' });
-      }
-
-      // 1. Run Reoon Validation
+      // 1. Validation
       const isValidEmail = await validateEmailWithReoon(email);
-      if (!isValidEmail) {
-        return res.status(400).json({ message: 'Invalid or disposable email address detected.' });
-      }
+      if (!isValidEmail) return res.status(400).json({ message: 'Invalid email address.' });
 
-      // 2. Run Custom Regex Validation
       const emailError = validateEmail(email);
-      if (emailError) {
-        return res.status(400).json({ message: emailError });
-      }
+      if (emailError) return res.status(400).json({ message: emailError });
 
-      // 3. Set up nodemailer transport
-      // --- NUCLEAR FIX: HARDCODED CREDENTIALS ---
-      // We are bypassing process.env to ensure the password is correct.
+      // 2. Transporter (SECURE VERSION)
       const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-          user: 'kaunghtetkyaw2001@gmail.com',  // Hardcoded User
-          pass: 'rkxvqtkcztqzbuog',             // Hardcoded App Password (New)
+          user: process.env.EMAIL_USER, // Secure Variable
+          pass: process.env.EMAIL_PASS, // Secure Variable
         },
       });
 
-      const mailOptions = {
+      // 3. Send
+      await transporter.sendMail({
         from: `"${name}" <kaunghtetkyaw2001@gmail.com>`,
         to: 'kaunghtetkyaw2001@gmail.com',
         replyTo: email,
         subject: `Message from ${name}`,
-        text: `You have received a message from ${name} (${email}):\n\n${message}`,
-      };
+        text: `From: ${name} (${email})\n\n${message}`,
+      });
 
-      console.log('Sending email with options:', mailOptions);
-
-      await transporter.sendMail(mailOptions);
-      console.log('Email sent successfully!');
       return res.status(200).json({ message: 'Message sent successfully!' });
 
     } catch (error) {
-      console.error('Email sending failed:', error);
-      return res.status(500).json({ message: 'Error sending message.', error: error.message });
+      console.error('Email error:', error);
+      return res.status(500).json({ message: 'Error sending message.' });
     }
   } else {
     return res.status(405).json({ message: 'Method Not Allowed' });
